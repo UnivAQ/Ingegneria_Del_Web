@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="
+            http://java.sun.com/xml/ns/javaee
+            http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+    <!-- Log4j Listener { -->
+    <context-param>
+        <param-name>log4jConfigLocation</param-name>
+        <param-value>/META-INF/configs/Log4j.properties</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+    </listener>
+    <!-- Log4j Listener } -->
+
+    <!-- context xml files loaded by org.springframework.web.context.ContextLoaderListener -->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value><!--/META-INF/configs/beans.xml--></param-value>
+    </context-param>
+
+    <!-- HttpServletRequest and HttpSession @Autowired support for @Controller -->
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+    <!-- HttpServletRequest and HttpSession @Autowired support for @Service -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <!-- Encoding Filter { -->
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- Encoding Filter } -->
+
+    <!-- UrlRewrite Filter { -->
+    <filter>
+        <filter-name>UrlRewriteFilter</filter-name>
+        <filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+        <init-param>
+            <param-name>confPath</param-name>
+            <param-value>/META-INF/configs/UrlRewriteFilter.xml</param-value>
+        </init-param>
+        <init-param>
+            <param-name>confReloadCheckInterval</param-name>
+            <param-value>0</param-value>
+        </init-param>
+        <init-param>
+            <param-name>logLevel</param-name>
+            <param-value>INFO</param-value><!-- TRACE, DEBUG, INFO (default), WARN, ERROR, FATAL -->
+        </init-param>
+        <init-param>
+            <param-name>statusPath</param-name>
+            <param-value>/urlrewritefilter</param-value>
+        </init-param>
+        <init-param>
+            <param-name>statusEnabled</param-name>
+            <param-value>false</param-value>
+        </init-param>
+        <init-param>
+            <param-name>statusEnabledOnHosts</param-name>
+            <param-value>localhost, *.localhost, 127.0.0.1</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>UrlRewriteFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    <!-- UrlRewrite Filter } -->
+
+    <!-- Spring MVC Servlet { -->
+    <servlet>
+        <servlet-name>SpringMvcServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>/META-INF/configs/SpringServlet.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SpringMvcServlet</servlet-name>
+        <url-pattern>/app/*</url-pattern>
+    </servlet-mapping>
+    <!-- Spring MVC Servlet } -->
+</web-app>

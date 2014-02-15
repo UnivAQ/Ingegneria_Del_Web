@@ -1,0 +1,41 @@
+
+<#include "header.html">
+
+<h3 id="why">Risultati della ricerca</h3>
+<ul id="maincon">
+    <li><img src="images/image3.jpg" alt="image1" /></li>
+
+    <#if (risultati?size>0)>
+    <#list risultati as risu>
+    <li class="risultati"><a href="curriculum?l=${risu}#why">Curriculum ${risu}</a></li>
+    </#list>
+    <li><a href="javascript:history.back()"><img src="images/back.png" class="icon"  title="indietro" alt="image1" /></a></li>
+    </#if>
+
+</ul>
+<div><br/><br/><br/></div>
+<table id="maincon1">
+    <tr>
+        <td>               <img src="images/image4.jpg" class="img_piccola" alt="image4" /></td>
+        <td>        <h3><a href="#">Promozione automatica e mansioni superiori</a></h3>
+            <p class="pannello"> Promozione automatica e mansioni superiori
+                Recente sentenza della Cassazione che interessa i Quadri.</p>
+        </td>
+    </tr>
+    <tr><td>               <img src="images/image10.jpg" class="img_piccola" alt="image10" />
+        </td><td>                <h3> <a href="#">Cambiare lavoro dopo tanti anni?</a></h3>
+            <p class="pannello"> Con la giusta preparazione si può!</p>
+        </td></tr>
+    <tr><td>                 <img src="images/image12.jpg" class="img_piccola" alt="image12" />
+        </td><td>                 <h3><a href="#"> Il colloquio</a></h3>
+            <p class="pannello">    Domani ho un colloquio, che faccio?
+                Consulenza in selezione e orientamento professionale</p>
+        </td></tr>
+    <tr><td>          <img src="images/image8.jpg" class="img_piccola" alt="image6" />
+        </td><td>          <h3><a href="#">Tipo di colloquio</a></h3>
+            <p class="pannello"> Colloqui di gruppo
+                Come funzionano gli Assessment Center</p>
+        </td></tr>
+</table>
+
+<#include "footer.html">

@@ -1,0 +1,78 @@
+<#include "header.html">
+<h3 id="why">Inserisci le tue esperienze lavorative</h3>
+<ul id="maincon">
+    <li>
+        <img src="images/image4.jpg" class="img_head" alt="image1" />
+
+        <form method="post" action="inserimento#why">
+            <table class="inserimento">
+                <tr>
+                    <td><input type="hidden" name="save" value="1"/></td>
+                    <td><input type="hidden" name="opt" value="3"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento"> Datore:</span> </td>
+                    <td><input name="datore" id="datore" type="text"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento">Incarico:</span></td>
+                    <td><input name="incarico" id="incarico" type="text"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento">Periodo:</span></td>
+                    <td><input name="periodo"id="periodo" type="text"/></td>
+                </tr>
+
+                <tr>
+                    <td><input value="aggiungi" name="aggiungi" type="submit"/></td>
+                </tr>
+
+            </table>
+        </form>
+
+        <form method="post" action="inserimento#why">
+            <p><input type="hidden" name="save" value="0"/></p>
+            <p><input type="hidden" name="opt" value="4"/></p>
+            <p><input value="avanti" name="avanti" type="submit"/></p>
+        </form>
+
+        <br />
+
+        <#if (esperienze?size>0)>
+        <table class="inserimento">
+            <tr>
+                <td><span class="inserimento">ESPERIENZE:</span></td>
+            </tr>
+            <#list esperienze as espe>
+            <tr>
+                <td>DATORE:</td>
+                <td>${espe.datore}</td>
+            </tr>
+            <tr>
+                <td>INCARICO:</td>
+                <td>${espe.incarico} </td>
+            </tr>
+            <tr>
+                <td>PERIODO:</td>
+                <td>${espe.periodo}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#list>
+        </table>
+
+        </#if>
+        <h3 class="ricerca">CURRICULUM VITAE</h3>
+        <h4><a href="#">Modello d'esempio per ottenere colloqui e lavoro</a></h4>
+        <img src="images/image8.jpg" alt="image8"/>
+        <p class="pannello"> * Il curriculum vitae per essere preso in considerazione da aziende e società di selezione deve essere professionale: in questo sito offriamo esempi utili per trovare lavoro e suggerimenti preziosi su come fare un curriculum vitae europeo, formato personalizzato, modello CV in inglese e lettera di presentazione.<br /><br />
+            * Hai scritto e inviato svariati curricula con poco successo? I tuoi curricula non si presentano con le informazioni giuste: impara come compilare modello curriculum vitae professionale piuttosto che un esempio standard.<br /><br />
+            * Pubblica il CV online, non inviarlo solo via posta o per e-mail; raccogliamo curricula in una banca dati che le aziende consultano per cercare nuovi dipendenti.<br />
+            Abbiamo online tutti gli indirizzi degli head hunter e dei selezionatori del personale a cui inviare CV e aiutarti nella ricerca.<br /><br /></p>
+    </li>
+</ul>
+<#include "footer.html">

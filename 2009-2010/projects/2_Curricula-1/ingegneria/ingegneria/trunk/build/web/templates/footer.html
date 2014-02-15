@@ -1,0 +1,153 @@
+</div>
+
+
+<div id="secCol">
+
+    <fieldset id="login">
+
+        <#if tipologia??>
+
+        <#if (tipologia==1)>
+        <h3 id="loginbox">MENU UTENTE</h3>
+        <ul>
+            <li><a href="pannello"><img class="login" alt="Home" src="images/folder_home.png"/> Home </a></li>
+
+            <#if (link)>
+            <li> <a href="modifica#why"><img class="login1" alt="modifica curriculum" src="images/immagine_laterale2.png" title="Modifica"/>
+                    Modifica curriculum</a></li>
+
+            <#else>
+            <li><a href="inserimento?save=0&amp;opt=0"><img class="login1" alt="inserimento" src="images/immagine_laterale2.png" title="Inserimento"/>
+                    Inserimento</a></li>
+
+            </#if>
+
+            <li><a href="ricerca#why"><img class="login1" alt="ricerca" src="images/immagine_laterale1.png" title="Ricerca"/>
+                    Ricerca</a></li>
+            <li><a href="logout"><img class="login" alt="logout" src="images/logout.gif" title="Logout"/>Logout</a></li>
+        </ul>
+        </#if>
+
+        <#if (tipologia == 2)>
+        <h3 id="loginbox"> MENU AZIENDA</h3>
+        <ul>
+            <li><a href="pannello"><img class="login" alt="home" src="images/folder_home.png"/>Home</a></li>
+            <li><a href="ricerca"><img class="login1" alt="ricerca" src="images/immagine_laterale1.png" title="Ricerca"/>Ricerca</a></li>
+            <li><a href="predefinito"><img class="login1" alt="ricerche specifiche" src="images/immagine_laterale6.png" title="Logout"/>Ricerche salvate</a>
+                <#if (cont??)>
+                <a href="risultatiMod">new ${cont}</a>
+                </#if>
+            </li>
+            <li><a href="logout"><img class="login" alt="logout" src="images/logout.gif" title="Logout"/>Logout</a></li>
+        </ul>
+        </#if>
+        <#else>
+
+        <h3 id="loginbox">Login membri</h3>
+        <ul>
+            <li class="clearfix">
+
+                <form action="login">
+
+                    <p class="clearfix"><label for="errore"><#if (error_login??) > username o password errati</#if></label></p>
+                    <p class="clearfix"><label for="username">Username</label>
+
+                        <input name="u" id="username" type="text" value="" /></p>
+
+                    <p class="clearfix"><label for="password">Password</label>
+
+                        <input name="p" id="password" type="password" value="" /></p>
+
+                    <p class="clearfix check">
+                        <input name="submit" id="submit" type="submit" value="" /></p>
+
+                </form>
+                <br />
+                <p class="member">Non sei un membro? <a href="registrazione?tipo=1">Registrati </a></p>
+                <p class="member">Cerchi curriculum? <a href="registrazione?tipo=2">Registratazione per aziende</a></p>
+            </li>
+        </ul>
+
+        </#if>
+
+
+
+    </fieldset>
+
+    <h3 id="news">Ultime notizie</h3>
+
+    <ul>
+
+        <li class="clearfix">
+
+            <h4><a href="#">Come scrivere un curriculm vitae</a></h4>
+
+            <span>30 giugno, 2010</span>
+
+            <p># Il curriculum vitae per essere preso in considerazione da aziende e società di selezione deve essere professionale: in questo sito offriamo esempi utili per trovare lavoro e suggerimenti preziosi su come fare un curriculum vitae europeo, formato personalizzato, modello CV in inglese e lettera di presentazione.</p>
+
+            <a href="#" class="more">Read more</a>
+
+        </li>
+
+        <li class="clearfix">
+
+            <h4><a href="#">Scrivere un curriculm partendo da zero, scopri come fare</a></h4>
+
+            <span>4 giugno, 2010</span>
+
+            <p>Hai scritto e inviato svariati curricula con poco successo? I tuoi curricula non si presentano con le informazioni giuste: impara come compilare modello curriculum vitae professionale piuttosto che un esempio standard.</p>
+
+            <a href="#" class="more">Read more</a>
+
+        </li>
+
+    </ul>
+
+    <h3 id="test">Modelli curriculm vitae</h3>
+
+    <ul>
+
+        <li class="clearfix">
+
+            <p>Se non hai idea di come compilare un curriculm vitae,troverai qui delle guide passo passo su come fare e dei modelli-esempio</p>
+
+            <a href="#" class="more">Read more</a>
+
+        </li>
+
+    </ul>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="footer">
+
+    <ul>
+
+        <li><a href="#">Home</a>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+
+        <li><a href="#">Terms and Conditions</a>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+
+        <li><a href="#">Privacy Policy</a>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+
+        <li><a href="#">Sitemap</a>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+
+        <li><a href="#">Support</a>&nbsp;&nbsp;-&nbsp;&nbsp;</li>
+
+        <li><a href="#">Contact Us</a></li>
+
+    </ul>
+
+    <p>Copyrights &copy; 2008 yourbusiness.com, All Rights Reserved</p>
+
+</div>
+</body>
+</html>

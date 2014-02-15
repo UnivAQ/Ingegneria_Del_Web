@@ -1,0 +1,416 @@
+#colonnasx h2 {
+	display:block;
+	width:520px;
+	height:36px;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 0 0 50px;
+	position:relative;
+}
+
+#colonnasx h2.cerchilavoro {
+	background:url(img/cerchilavoro.gif) top left no-repeat;
+}
+
+#colonnasx p {
+    padding:10px 20px;
+}
+
+#colonnasx a.faqcurriculum{
+	background:url(img/perche.gif) bottom left no-repeat;
+	font-size:12px;
+	font-weight:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	display:block;
+	height:26px;
+	width:200px;
+	position:absolute;
+	color:#990000;
+	padding:10px 0 0 30px;;
+	top:0;
+	right:0;
+}
+
+
+
+#colonnasx h2.cerchiprof {
+	background:url(img/cerchiprof.gif) top left no-repeat;
+}
+
+
+/*area personale */
+
+/*area1*/
+
+#colonnasx .area1 {
+	background:#FFEBCC url(img/sfondo_area.gif) top left repeat-x;
+	/*border-top:1px solid #FF6E00;*/
+	height:auto!important;
+	min-height:160px;
+	height:160px;
+	display:block;
+	padding:0px 0px 0px 0px;
+	position:relative;
+}
+
+#colonnasx ul.area1 a{
+	height:50px;
+	width:250px;
+	display:block;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	position:relative;
+	padding:10px 0 0 70px;
+	color:#000;
+	margin:10px 0 0 0;
+}
+
+#colonnasx ul.area1 a:hover{
+	color:#990000;
+}
+
+#colonnasx ul.area1 a span{
+	font-size:10px;
+	position:absolute;
+	top:27px;
+	left:70px;
+	font-weight:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+#colonnasx ul.area1  a.curriculum
+{
+	margin-left:10px;
+	background:url(img/curriculum.png) top left no-repeat!important;
+	background:url(img/curriculum.gif) top left no-repeat;
+}
+
+#colonnasx ul.area1  a.candidature{
+	margin-left:10px;
+	background:url(img/candidature.png) top left no-repeat!important;
+	background:url(img/curriculum.gif) top left no-repeat;
+}
+
+#colonnasx .area1 a.opzione {
+	display:block;
+	width:112px;
+	height:18px;
+	background: url(img/btn_ricarica.gif) top left no-repeat;
+	position:absolute;
+	top:51px;
+	right:11px;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+}
+
+#colonnasx .area1 a:hover.opzione {
+	background: url(img/btn_ricarica.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+#colonnasx  .area1 .pannello {
+	display:block;
+	width:240px;
+	height:26px;
+	background: url(img/pannellocrediti.gif) top left no-repeat;
+	position:absolute;
+	top:55px;
+	right:0px;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	color:#990000;
+	padding:10px 0 0 10px;
+}
+
+/*
+#colonnasx ul.area1 li{
+	padding-left: 10px;
+}
+*/
+
+/*area2*/
+
+#colonnasx .area2 {
+	background:#FFDBA3 url(img/sfondo_area.gif) top left repeat-x;
+	/*border-top:1px solid #FF6E00;*/
+	height:auto!important;
+	min-height:250px;
+	height:250px;
+	display:block;
+	padding:0 0 0px 0px;
+	position:relative;
+	margin:5px 0;
+}
+
+
+#colonnasx ul.area2 a{
+	height:40px;
+	width:250px;
+	display:block;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	position:relative;
+	padding:10px 0 0 70px;
+	color:#000;
+	margin:10px 0 0 0;
+}
+
+#colonnasx ul.area2 a:hover{
+	color:#990000;
+}
+
+#colonnasx ul.area2 a span{
+	font-size:10px;
+	position:absolute;
+	top:27px;
+	left:70px;
+	font-weight:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+#colonnasx ul.area2 a.oneshot{
+	margin-left:10px;
+	background:url(img/oneshot.png) top left no-repeat !important;
+	background:url(img/oneshot.gif) top left no-repeat;
+	width:100px;
+}
+
+#colonnasx ul.area2 a.ricerca{
+	margin-left:10px;
+	background:url(img/ricerca.png) top left no-repeat !important;
+	background:url(img/ricerca.gif) top left no-repeat;
+}
+
+#colonnasx ul.area2 a.rivedi{
+	margin-left:10px;
+	background:url(img/rivedi.png) top left no-repeat !important;
+	background:url(img/rivedi.gif) top left no-repeat;
+}
+
+#colonnasx ul.area2 a.crediti{
+	margin-left:10px;
+	background:url(img/crediti.png) top left no-repeat !important;
+	background:url(img/crediti.gif) top left no-repeat;
+}
+#colonnasx .area2 .pannello {
+	display:block;
+	width:240px;
+	height:26px;
+	background: url(img/pannellocrediti.gif) top left no-repeat;
+	position:absolute;
+	bottom:18px;
+	right:0px;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	color:#990000;
+	padding:10px 0 0 10px;
+}
+
+#colonnasx .area2 a.opzione {
+	display:block;
+	width:112px;
+	height:18px;
+	background: url(img/btn_ricarica.gif) top left no-repeat;
+	position:absolute;
+	bottom:23px;
+	right:11px;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+}
+
+#colonnasx .area2 a:hover.opzione {
+	background: url(img/btn_ricarica.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+#colonnasx .area2 ul.opzioni_oneshot {
+	display:block;
+	width:240px;
+	height:26px;
+	background: url(img/pannellocrediti.gif) top left no-repeat;
+	position:absolute;
+	top:55px;
+	right:0;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	color:#990000;
+	padding:10px 0 0 10px;
+}
+
+#colonnasx ul.area2 a.inserisci {
+	display:block;
+	width:112px;
+	height:18px;
+	position:absolute;
+	top:-4px;
+	right:10px;
+	background: url(img/btn_ricarica.gif) top left no-repeat;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+}
+#colonnasx ul.area2 a:hover.inserisci {
+	background: url(img/btn_ricarica.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+#colonnasx ul.area2 a.visualizza {
+	display:block;
+	width:112px;
+	height:18px;
+	position:absolute;
+	top:-4px;
+	left:7px;
+	background: url(img/btn_ricarica.gif) top left no-repeat;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+}
+
+#colonnasx ul.area2 a:hover.visualizza {
+	background: url(img/btn_ricarica.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+
+/*area3*/
+
+#colonnasx .area3 {
+	background:#FFEBCC url(img/sfondo_area3.gif) bottom left repeat-x;
+	border-top:1px solid #FF6E00;
+	height:auto!important;
+	height:100px;
+	min-height:100px;
+	display:block;
+	padding:0 0 20px 10px;
+	position:relative;
+}
+
+#colonnasx ul.area3 a{
+	height:40px;
+	width:250px;
+	display:block;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	position:relative;
+	padding:10px 0 0 70px;
+	color:#000;
+	margin:10px 0 0 0;
+}
+
+#colonnasx ul.area3 a:hover{
+	color:#990000;
+}
+
+#colonnasx ul.area3 a span{
+	font-size:10px;
+	position:absolute;
+	top:27px;
+	left:70px;
+	font-weight:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+#colonnasx ul.area1  a.oneshotpersonal{
+	margin-left:10px;
+	background:url(img/oneshotpersonal.png) top left no-repeat !important;
+	background:url(img/oneshotpersonal.gif) top left no-repeat;
+}
+
+#colonnasx ul.area1 a.segnalazioni{
+	margin-left:10px;
+	background:url(img/segnalazioni.png) top left no-repeat !important;
+	background:url(img/segnalazioni.gif) top left no-repeat;
+}
+
+#colonnasx .area1 a.opzione2 {
+	display:block;
+	width:112px;
+	height:18px;
+	background: url(img/btn_ricarica.gif) top left no-repeat;
+	position:absolute;
+	bottom:23px;
+	right:11px;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+}
+
+#colonnasx .area1 a:hover.opzione2 {
+	background: url(img/btn_ricarica.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+#colonnasx .area1 .pannello2 {
+	display:block;
+	width:240px;
+	height:26px;
+	background: url(img/pannellocrediti.gif) top left no-repeat;
+	position:absolute;
+	bottom:18px;
+	right:0px;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	color:#990000;
+	padding:10px 0 0 10px;
+}
+
+/*gesyione titoli aree*/
+.titoloarea {
+	/*background:#FFEBCC;*/
+	/*border-bottom:1px solid #FF6E00;*/
+	height:auto!important;
+	height:30px;
+	min-height:30px;
+	margin:0 0 5px 0;
+	font-size:13px;
+}
+
+.titoloarea h3{
+	background:url(img/news_trasp.gif) bottom left no-repeat;
+	height:35px;
+	display:block;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	color:#990000;
+	padding:10px 0 0 20px;
+}
+
+.titoloarea a {
+	color:#000;
+}
+
+.titoloarea a:hover {
+	text-decoration:underline;
+	color:#990000;
+}
+
+.titoloarea .testo {
+	padding:10px 20px;
+}
+

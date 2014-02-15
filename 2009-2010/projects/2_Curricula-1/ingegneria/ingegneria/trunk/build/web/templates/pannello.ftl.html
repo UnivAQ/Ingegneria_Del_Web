@@ -1,0 +1,112 @@
+<#include "header.html">
+
+<#if (tipologia==1)>
+<#if (link)>
+<!--
+Area utente che ha inserito un curriculum
+-->
+<h3 id="why">Area utente</h3>
+<table id="maincon">
+    <tr>
+        <td>               <img src="images/image4.jpg" class="img_piccola" alt="image4" /></td>
+        <td>        <h3><a href="#">Promozione automatica e mansioni superiori</a></h3>
+            <p class="pannello"> Promozione automatica e mansioni superiori
+                Recente sentenza della Cassazione che interessa i Quadri.</p>
+        </td>
+    </tr>
+    <tr><td>               <img src="images/image10.jpg" class="img_piccola" alt="image10" />
+        </td><td>                <h3> <a href="#">Cambiare lavoro dopo tanti anni?</a></h3>
+            <p class="pannello"> Con la giusta preparazione si può!</p>
+        </td></tr>
+    <tr><td>                 <img src="images/image12.jpg" class="img_piccola" alt="image12" />
+        </td><td>                 <h3><a href="#"> Il colloquio</a></h3>
+            <p class="pannello">    Domani ho un colloquio, che faccio?
+                Consulenza in selezione e orientamento professionale</p>
+        </td></tr>
+    <tr><td>          <img src="images/image8.jpg" class="img_piccola" alt="image6" />
+        </td><td>          <h3><a href="#">Tipo di colloquio</a></h3>
+            <p class="pannello"> Colloqui di gruppo
+                Come funzionano gli Assessment Center</p>
+        </td></tr>
+</table>
+
+<#else>
+
+<!--
+Area utente che non ha inserito un curriculum
+-->
+<h3 id="why">Inserisci il tuo curriculum</h3>
+<ul id="maincon">
+    <li>
+        <img src="images/image4.jpg" alt="Inserimento curriculum" />
+        <h4>NON HAI ANCORA INSERITO IL TUO CURRICULUM. </h4><br />
+        Compila il form sotto ed avrai accesso a tutti nostri servizi
+        <#include "form_inserimento.html">
+
+
+
+        <h3 class="ricerca">CURRICULUM VITAE</h3>
+        <h4><a href="#">Modello d'esempio per ottenere colloqui e lavoro</a></h4>
+        <img src="images/image8.jpg" alt="image8"/>
+        <p class="pannello"> * Il curriculum vitae per essere preso in considerazione da aziende e società di selezione deve essere professionale: in questo sito offriamo esempi utili per trovare lavoro e suggerimenti preziosi su come fare un curriculum vitae europeo, formato personalizzato, modello CV in inglese e lettera di presentazione.<br /><br />
+            * Hai scritto e inviato svariati curricula con poco successo? I tuoi curricula non si presentano con le informazioni giuste: impara come compilare modello curriculum vitae professionale piuttosto che un esempio standard.<br /><br />
+            * Pubblica il CV online, non inviarlo solo via posta o per e-mail; raccogliamo curricula in una banca dati che le aziende consultano per cercare nuovi dipendenti.<br />
+            Abbiamo online tutti gli indirizzi degli head hunter e dei selezionatori del personale a cui inviare CV e aiutarti nella ricerca.<br /><br /></p>
+    </li>
+</ul>
+</#if>
+
+<#elseif (tipologia==2)>
+
+
+<!--
+Area azienda
+-->
+
+<h3 id="why">Area azienda</h3>
+
+<table id="maincon">
+    <tr>
+        <td>
+            <img src="images/image12.jpg" alt="image1" />
+            <h3><a href="#">Abbiamo creato un modo tutto nuovo per trovare lavoro</a></h3>
+            <p class="pannello"> Non è necessario ripetere le tue Ricerche Annunci ogni volta che effettui l'accesso.
+                Puoi utilizzare il Cercalavoro una volta sola e salvare i criteri di ricerca.
+                Puoi anche decidere la frequenza con la quale ricevere le email con le ricerche salvate.</p>
+        </td></tr>
+    <tr><td>
+            <img src="images/image10.jpg" alt="image1" />
+            <h3><a href="#">Ricerca regionale</a></h3>
+            <p class="pannello">Cerchi personale nella tua Regione? Scopri le soluzioni per raggiungere candidati qualificati
+                nella tua area geografica.</p>
+        </td></tr>
+    <tr><td>
+            <img src="images/image9.jpg" alt="image1" />
+            <h3><a href="#">Professionisti e Piccole Imprese</a></h3>
+            <p class="pannello">Anche se lavori in proprio, hai una partita IVA o una tua piccola realtà imprenditoriale con meno di 15 dipendenti, Internet è ormai il canale
+                giusto per trovare collaboratori qualificati a costi contenuti.</p>
+        </td></tr>
+    <tr><td>
+            <img src="images/image8.jpg" alt="image1" />
+            <h3><a href="#">Piccole e Medie Imprese</a></h3>
+            <p class="pannello">Ti occupi di risorse umane in una piccola o media realtà aziendale
+                fino a 250 dipendenti? Grazie a noi puoi avere accesso ad una
+                banca dati di più di 2 milioni di candidati in Italia.</p>
+        </td></tr>
+    <tr><td>
+            <img src="images/image4.jpg" alt="image1" />
+            <h3><a href="#">Grandi Aziende</a></h3>
+            <p class="pannello">Se cerchi personale per una grande azienda o una multinazionale con più di 250 dipendenti,
+                noi siamo il partner ideale per te. Con oltre 150 milioni di CV depositati in tutto il mondo,
+                puoi raggiungere candidati qualificati in più di 50 Paesi.</p>
+        </td>
+
+
+    </tr></table>
+
+</#if>
+
+
+
+
+<#include "footer.html">

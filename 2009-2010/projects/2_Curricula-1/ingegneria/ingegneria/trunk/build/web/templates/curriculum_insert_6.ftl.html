@@ -1,0 +1,207 @@
+<#include "header.html">
+<h3 id="why">Riepilogo</h3>
+<ul id="maincon">
+    <li>
+        <img src="images/image7.jpg" class="img_head" alt="image1" />
+        <table class="inserimento">
+            <tr>
+                <td><span class="inserimento#why"> ANAGRAFICA</span></td>
+            </tr>
+            <tr>
+                <td>NOME:</td>
+                <td>${anagrafica.nome}</td>
+            </tr>
+
+            <tr>
+                <td>COGNOME:</td>
+                <td>  ${anagrafica.cognome}</td>
+            </tr>
+            <tr>
+                <td>DATA DI NASCIATA:</td>
+                <td> ${anagrafica.dataNascita}</td>
+            </tr>
+            <tr>
+                <td>EMAIL:</td>
+                <td> ${anagrafica.email}</td>
+            </tr>
+            <tr>
+                <td> INDIRIZZO: </td>
+                <td> ${anagrafica.indirizzo}</td>
+            </tr>
+            <tr>
+                <td>TELEFONO:</td>
+                <td>  ${anagrafica.telefono}</td>
+            </tr>
+            <tr>
+                <td>SESSO: </td>
+                <td> ${anagrafica.sesso}</td>
+            </tr>
+            <tr>
+                <td>PROVINCIA:</td>
+                <td> ${anagrafica.provincia}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <#if (istruzione?size>0)>
+
+            <tr>
+                <td><span class="inserimento">ISTRUZIONE:</span></td>
+            </tr>
+            <#list istruzione as istr>
+
+            <tr>
+                <td>TITOLO: </td>
+                <td> ${istr.titolo}</td>
+            </tr>
+            <tr>
+                <td> DATA:</td>
+                <td> ${istr.data} </td>
+            </tr>
+            <tr>
+                <td> ISTITUZIONE:</td>
+                <td> ${istr.istituzione}</td>
+            </tr>
+            <tr>
+                <td> VOTO:</td>
+                <td> ${istr.voto}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#list>
+
+            </#if>
+
+
+
+            <#if (esperienze?size>0)>
+            <tr>
+                <td><span class="inserimento">ESPERIENZE:</span></td>
+            </tr>
+            <#list esperienze as espe>
+            <tr>
+                <td>DATORE:</td>
+                <td>${espe.datore}</td>
+            </tr>
+            <tr>
+                <td>INCARICO:</td>
+                <td>${espe.incarico} </td>
+            </tr>
+            <tr>
+                <td>PERIODO:</td>
+                <td>${espe.periodo}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#list>
+
+            </#if>
+
+
+
+            <#if (lingue?size>0)>
+            <tr>
+                <td><span class="inserimento">LINGUE:</span></td>
+            </tr>
+            <#list lingue as ling>
+            <tr>
+                <td>NOME:</td>
+                <td>${ling.nome}</td>
+            </tr>
+            <tr>
+                <td>LIVELLO PARLATO:&nbsp;</td>
+                <td>${ling.livelloParlato}</td>
+            </tr>
+            <tr>
+                <td>LIVELLO SCRITTO:&nbsp;</td>
+                <td>${ling.livelloScritto}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#list>
+
+            </#if>
+
+            <#if (tipoImpiego.partTime) || (tipoImpiego.partTime) || (tipoImpiego.determinato) || (tipoImpiego.indeterminato)
+            || (tipoImpiego.dirigente) || (tipoImpiego.subordinato) || (tipoImpiego.lavoroEstero)
+            || (tipoImpiego.soggiornoEstero)>
+
+            <tr>
+                <td><span class="inserimento">TIPO DI IMPIEGO:</span></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" rowspan="1">
+                    <ul class="inserimento">
+                        <!--se non inserisco nulla il validatore da errore perchè all'interno di <ul> non c'è <li>-->
+                        <#if (tipoImpiego.partTime)>
+                        <li>  part time </li>
+                        </#if>
+
+
+                        <#if (tipoImpiego.fullTime)>
+                        <li>full time </li>
+                        </#if>
+
+                        <#if (tipoImpiego.determinato)>
+                        <li> determinato</li>
+                        </#if>
+
+                        <#if (tipoImpiego.indeterminato)>
+                        <li> indeterminato </li>
+                        </#if>
+
+                        <#if (tipoImpiego.dirigente)>
+                        <li> dirigente </li>
+                        </#if>
+
+                        <#if (tipoImpiego.subordinato)>
+                        <li> subordinato </li>
+                        </#if>
+
+                        <#if (tipoImpiego.lavoroEstero)>
+                        <li> lavoro estero </li>
+                        </#if>
+
+                        <#if (tipoImpiego.soggiornoEstero)>
+                        <li> soggiorno estero </li>
+                        </#if>
+
+                        <#if (tipoImpiego.provincia!="")>
+                        <li>Provincia preferita: ${tipoImpiego.provincia}</li>
+                        </#if>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#if>
+
+            <#if (capacita?size>0) >
+            <tr>
+                <td> <span class="inserimento"> CAPACITA':</span></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="1">
+                    <ul class="inserimento"><#list capacita as capa>
+                        <li>${capa.capacita}</li>
+                        </#list>
+                    </ul></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#if>
+
+
+
+        </table>
+
+    </li>
+</ul>
+<#include "footer.html">

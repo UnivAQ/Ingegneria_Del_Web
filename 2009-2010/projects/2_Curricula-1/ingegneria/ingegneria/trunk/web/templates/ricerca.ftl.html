@@ -1,0 +1,27 @@
+<#include "header.html">
+
+
+
+<!--
+ AREA UTENTE
+-->
+<#if (tipologia==1)>
+<h3 id="why">Ricerca un curriculum</h3>
+<ul id="maincon">
+    <li>
+        <img src="images/image7.jpg" alt="image1" />
+        <!--
+        AREA AZIENDA
+        -->
+        <#elseif (tipologia==2)>
+        <h3 id="why">Ricerca un curriculum</h3>
+        <ul id="maincon">
+            <li>
+                <img src="images/image7.jpg" alt="image1" />
+
+                </#if>
+                <#include "form_ricerca.html">
+
+            </li></ul>
+
+        <#include "footer.html">

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <bean id="freemarkerConfiguration"
+          class="org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean">
+        <description>FreeMarker config</description>
+        <property name="templateLoaderPaths">
+            <list>
+                <value>/WEB-INF/freemarker/</value>
+            </list>
+        </property>
+        <property name="freemarkerSettings">
+            <props>
+                <prop key="datetime_format">yyyy/MM/dd</prop>
+                <prop key="number_format">#</prop>
+                <prop key="whitespace_stripping">true</prop>
+                <prop key="tag_syntax">square_bracket</prop>
+                <!--<prop key="object_wrapper">beans</prop>-->
+            </props>
+        </property>
+        <property name="freemarkerVariables">
+            <map>
+                <entry key="xml_escape" value-ref="fmXmlEscape"/>
+                <entry key="html_escape" value-ref="fmHtmlEscape"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="fmXmlEscape"  class="freemarker.template.utility.XmlEscape"/>
+    <bean id="fmHtmlEscape" class="freemarker.template.utility.HtmlEscape"/>
+</beans>

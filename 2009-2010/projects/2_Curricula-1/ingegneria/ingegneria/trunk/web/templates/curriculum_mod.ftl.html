@@ -1,0 +1,246 @@
+<#include "header.html">
+<h3 id="why">Modifica il tuo Curriculum</h3>
+<ul id="maincon">
+    <li>
+        <img src="images/image4.jpg" class="img_head" alt="image1" />
+        <table class="ricerca">
+            <tr>
+                <td style="width:30%"><span class="ricerca"> ANAGRAFICA</span></td>
+            </tr>
+            <tr>
+                <td>NOME:</td>
+                <td>${anagrafica.nome}</td>
+            </tr>
+
+            <tr>
+                <td>COGNOME:</td>
+                <td>  ${anagrafica.cognome}</td>
+            </tr>
+            <tr>
+                <td>DATA DI NASCIATA:</td>
+                <td> ${anagrafica.dataNascita}</td>
+            </tr>
+            <tr>
+                <td>EMAIL:</td>
+                <td> ${anagrafica.email}</td>
+            </tr>
+            <tr>
+                <td> INDIRIZZO: </td>
+                <td> ${anagrafica.indirizzo}</td>
+            </tr>
+            <tr>
+                <td>TELEFONO:</td>
+                <td>  ${anagrafica.telefono}</td>
+            </tr>
+            <tr>
+                <td>SESSO: </td>
+                <td> ${anagrafica.sesso}</td>
+            </tr>
+            <tr>
+                <td>PROVINCIA:</td>
+                <td> ${anagrafica.provincia}</td>
+            </tr>
+            <tr>
+
+                <td><a href="modificaCur?mod=0"><img src="images/mod.png"  class="icon" title="modifica"   alt="modifica" /></a></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+
+
+            <tr>
+                <td><span class="ricerca">ISTRUZIONE:</span></td><td><a href="modificaCur?add=1"><img src="images/add.png"  class="icon" title="aggiungi"   alt="add" /></a></td>
+            </tr>
+            <#if (istruzione?size>0)>
+            <#list istruzione as istr>
+
+            <tr>
+                <td>TITOLO: </td>
+                <td> ${istr.titolo}</td>
+            </tr>
+            <tr>
+                <td> DATA:</td>
+                <td> ${istr.data} </td>
+            </tr>
+            <tr>
+                <td> ISTITUZIONE:</td>
+                <td> ${istr.istituzione}</td>
+            </tr>
+            <tr>
+                <td> VOTO:</td>
+                <td> ${istr.voto}</td>
+            </tr>
+            <tr>
+                <td><a href="modificaCur?mod=1&amp;id_ist=${istr.key}"><img src="images/mod.png"  class="icon" title="modifica"   alt="modifica" /></a><a href="aggiornamento?del=1&amp;id_ist=${istr.key}"><img src="images/delete.png"  class="icon" title="elimina"   alt="elimina" /></a>  </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#list>
+
+            <#else>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#if>
+
+
+
+
+            <tr>
+                <td><span class="ricerca">ESPERIENZE:</span></td><td><a href="modificaCur?add=2"><img src="images/add.png"  class="icon" title="aggiungi"   alt="add" /></a></td>
+            </tr>
+            <#if (esperienze?size>0)>
+            <#list esperienze as espe>
+            <tr>
+                <td>DATORE:</td>
+                <td>${espe.datore}</td>
+            </tr>
+            <tr>
+                <td>INCARICO:</td>
+                <td>${espe.incarico} </td>
+            </tr>
+            <tr>
+                <td>PERIODO:</td>
+                <td>${espe.periodo}</td>
+            </tr>
+            <tr>
+                <td>  <a href="modificaCur?mod=2&amp;id_esp=${espe.key}"><img src="images/mod.png"  class="icon" title="modifica"   alt="modifica" /></a><a href="aggiornamento?del=2&amp;id_esp=${espe.key}"><img src="images/delete.png"  class="icon" title="elimina"   alt="elimina" /></a></td>
+            </tr>
+
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            </#list>
+
+
+            <#else>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#if>
+
+
+
+
+            <tr>
+                <td><span class="ricerca">LINGUE:</span></td><td><a href="modificaCur?add=3"><img src="images/add.png"  class="icon" title="aggiungi"   alt="add" /></a></td>
+            </tr>
+            <#if (lingue?size>0)>
+            <#list lingue as ling>
+            <tr>
+                <td>NOME:</td>
+                <td>${ling.nome}</td>
+
+            </tr>
+            <tr>
+                <td>LIVELLO PARLATO:&nbsp;</td>
+                <td>${ling.livelloParlato}</td>
+            </tr>
+            <tr>
+                <td>LIVELLO SCRITTO:&nbsp;</td>
+                <td>${ling.livelloScritto}</td>
+            </tr>
+            <tr>
+                <td><a href="modificaCur?mod=3&amp;id_lin=${ling.key}"><img src="images/mod.png"  class="icon" title="modifica"   alt="modifica" /></a><a href="aggiornamento?del=3&amp;id_lin=${ling.key}"><img src="images/delete.png"  class="icon" title="elimina"   alt="elimina" /></a> </td>
+            </tr>
+            </#list>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+
+            <#else>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#if>
+
+            <tr>
+                <td> <span class="ricerca"> CAPACITA':</span></td><td><a href="modificaCur?add=4"><img src="images/add.png"  class="icon" title="aggiungi"   alt="add" /></a></td>
+            </tr>
+
+            <#if (capacita?size>0) >
+            <tr>
+                <td colspan="2" rowspan="1">
+                   <#list capacita as capa> <ul class="ricerca">
+                       <li>${capa.capacita} <a href="aggiornamento?del=4&amp;id_cap=${capa.key}"><img src="images/delete.png" class="icon" title="elimina"   alt="elimina" /></a>  </li>
+                       
+                        </ul><br/>
+                </#list></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#if>
+            <#if (tipoImpiego?size>0)>
+            <tr>
+                <td><span class="ricerca">TIPO DI IMPIEGO:</span></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" rowspan="1">
+                    <ul class="ricerca">
+                        <#if (tipoImpiego.partTime)>
+                        <li>  part time </li>
+                        </#if>
+
+
+                        <#if (tipoImpiego.fullTime)>
+                        <li>full time </li>
+                        </#if>
+
+                        <#if (tipoImpiego.determinato)>
+                        <li> determinato</li>
+                        </#if>
+
+                        <#if (tipoImpiego.indeterminato)>
+                        <li> indeterminato </li>
+                        </#if>
+
+                        <#if (tipoImpiego.dirigente)>
+                        <li> dirigente </li>
+                        </#if>
+
+                        <#if (tipoImpiego.subordinato)>
+                        <li> subordinato </li>
+                        </#if>
+
+                        <#if (tipoImpiego.lavoroEstero)>
+                        <li> lavoro estero </li>
+                        </#if>
+
+                        <#if (tipoImpiego.soggiornoEstero)>
+                        <li> soggiorno estero </li>
+                        </#if>
+
+                        <#if (tipoImpiego.provincia!="")>
+                        <li>Provincia preferita: ${tipoImpiego.provincia}</li>
+                        </#if>
+
+
+
+                    </ul>
+
+                </td>
+            </tr>
+            <tr>
+                <td><a href="modificaCur?mod=4&amp;id_tip=${tipoImpiego.key}"><img src="images/mod.png"  class="icon" title="modifica"   alt="modifica" /></a></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#if>
+
+
+
+
+
+
+        </table>
+    </li>
+</ul>
+
+<#include "footer.html">

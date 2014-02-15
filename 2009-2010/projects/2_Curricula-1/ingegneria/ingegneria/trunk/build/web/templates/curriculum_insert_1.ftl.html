@@ -1,0 +1,116 @@
+<#include "header.html">
+<h3 id="why">Inserisci i tuoi titoli di studio</h3>
+<ul id="maincon">
+    <li>
+        <img src="images/image2.jpg" class="img_head" alt="image1" />
+
+        <form method="post" action="inserimento#why">
+            <table class="inserimento">
+                <tr>
+                    <td><input type="hidden" name="save" value="1"/></td>
+                    <td><input type="hidden" name="opt" value="1"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento"> Tipo:</span></td>
+                    <td> <select name="tipologia">
+                            <option value="5">___________________</option>
+                            <option value="0">Licenza Media</option>
+                            <option value="1">Diploma</option>
+                            <option value="2">Laurea Base</option>
+                            <option value="3">Laurea Specialistica</option>
+                            <option value="4">Master</option>
+                            <option value="5">Altro</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento">Titolo:</span></td>
+                    <td><input name="titolo" id="titolo" type="text"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento"> Istituzione:</span></td>
+                    <td><input name="istituzione" id="istituzione" type="text"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento"> Data conseguimento:</span></td>
+                    <td><input name="data" id="data" type="text"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento">Voto:</span></td>
+                    <td><input value="0" name="voto" id="voto" type="text"/></td>
+                </tr>
+                <tr>
+                    <td><input value="aggiungi" name="aggiungi" type="submit"/></td>
+                </tr>
+            </table>
+        </form>
+
+        <form method="post" action="inserimento#why">
+            <p><input type="hidden" name="save" value="0"/></p>
+            <p><input type="hidden" name="opt" value="2"/></p>
+            <p><input value="avanti" name="avanti" type="submit"/></p>
+        </form>
+
+        <br />
+        <#if (istruzione?size>0)>
+        <table class="inserimento">
+            <tr>
+                <td><span class="inserimento">ISTRUZIONE:</span> </td>
+                <td><#list istruzione as istr></td>
+            </tr>
+            <tr>
+                <td>TIPO:</td>
+                <#if (istr.tipologia==0)>
+                <td>Licensa media</td> </#if>
+                <#if (istr.tipologia==1)>
+                <td>Diploma</td> </#if>
+                <#if (istr.tipologia==2)>
+                <td>Laurea base</td> </#if>
+                <#if (istr.tipologia==3)>
+                <td> Laurea specialistica</td> </#if>
+                <#if (istr.tipologia==4)>
+                <td>Master</td> </#if>
+                <#if (istr.tipologia==5)>
+                <td>Altro</td> </#if>
+            </tr>
+            <tr>
+                <td>TITOLO: </td>
+                <td> ${istr.titolo}</td>
+            </tr>
+            <tr>
+                <td> DATA:</td>
+                <td> ${istr.data} </td>
+            </tr>
+            <tr>
+                <td> ISTITUZIONE:</td>
+                <td> ${istr.istituzione}</td>
+            </tr>
+            <tr>
+                <td> VOTO:</td>
+                <td> ${istr.voto}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            </#list>
+        </table>
+        </#if>
+        <h3 class="ricerca">CURRICULUM VITAE</h3>
+        <h4><a href="#">Modello d'esempio per ottenere colloqui e lavoro</a></h4>
+        <img src="images/image8.jpg" alt="image8"/>
+        <p class="pannello"> * Il curriculum vitae per essere preso in considerazione da aziende e società di selezione deve essere professionale: in questo sito offriamo esempi utili per trovare lavoro e suggerimenti preziosi su come fare un curriculum vitae europeo, formato personalizzato, modello CV in inglese e lettera di presentazione.<br /><br />
+            * Hai scritto e inviato svariati curricula con poco successo? I tuoi curricula non si presentano con le informazioni giuste: impara come compilare modello curriculum vitae professionale piuttosto che un esempio standard.<br /><br />
+            * Pubblica il CV online, non inviarlo solo via posta o per e-mail; raccogliamo curricula in una banca dati che le aziende consultano per cercare nuovi dipendenti.<br />
+            Abbiamo online tutti gli indirizzi degli head hunter e dei selezionatori del personale a cui inviare CV e aiutarti nella ricerca.<br /><br /></p>
+    </li>
+</ul>
+
+<#include "footer.html">
+
+
+
+

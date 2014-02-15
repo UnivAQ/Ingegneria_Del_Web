@@ -1,0 +1,185 @@
+<#include "header.html">
+<h3 id="why">Registrazione utente</h3>
+<ul id="maincon">
+    <li>
+        <img src="images/image12.jpg" class="img_head" alt="image1" />
+        <#if (errore)>
+        ATTENZIONE!! Username già in uso.
+        </#if>
+
+        <form method="post" id="registrazione_utente" action="" name="registrazione_utente" >
+            <table class="inserimento">
+                <tr>
+                    <td><input type="hidden" name="tipologia" id="tipologia" value="1"/></td>
+                </tr>
+                <tr>
+                    <td> Username:</td>
+                    <td><input type="text" name="username"  /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" /></td>
+                </tr>
+                <tr>
+                    <td> E-mail:</td>
+                    <td><input type="text" name="email" /></td>
+                </tr>
+            </table>
+
+            <div><br />Queste sono le <a href="#">Condizioni d'Uso</a> che devi accettare per creare un account.</div>
+            <div class="legalQuestionTextArea"><b>1. Oggetto del Contratto</b>
+
+                <br />La presente pagina, da leggersi attentamente, stabilisce le "Condizioni Generali" che disciplinano l'utilizzo del sito (di seguito il "Sito") di job S.r.l. (di seguito la "Società").  Per poter usufruire dei servizi offerti sul nostro sito Lei dovrà accettare le presenti Condizioni Generali  cliccando sul tasto "accetto" posto su questa pagina web.  Nel caso in cui Lei non accetti le presenti Condizioni Generali, non dovrà utilizzare questo sito e fruire dei servizi offerti.  La Società si riserva il diritto di modificare in qualunque momento le presenti Condizioni Generali con comunicazione scritta all'Utente, anche via e-mail, con un preavviso di almeno 5 giorni.  Ricevuta la comunicazione dell'intervenuta modifica delle Condizioni Generali l'Utente potrà comunicarne l'accettazione ovvero recedere dall'accordo.  In difetto di una comunicazione da parte dell'Utente nel termine di 5 giorni decorrenti dal ricevimento dell'avviso di cui sopra, le nuove Condizioni Generali si riterranno accettate e pienamente efficaci nei confronti dell'Utente.
+                <br />I termini "Lei" e "Utente", qui di seguito utilizzati, indicano le persone fisiche e giuridiche che accedono per qualunque motivo a questo Sito.
+                <br /><br />
+                <b>2. Uso del Materiale</b>
+                <br />La Società autorizza l'Utente a prendere visione e scaricare, a solo uso personale e a fini non commerciali, un'unica copia del materiale disponibile sul Sito.
+                <br />Il testo, la grafica, le immagini, i loghi, le icone, il software e ogni altro materiale presente sul Sito (di seguito il "Materiale") godono di protezione giuridica ai sensi delle leggi e dei regolamenti in materia di proprietà intellettuale ed industriale sia italiani che internazionali.
+                <br />Il Materiale è di proprietà della Società, di chi fornisce informazioni e dati o dei clienti.
+                <br />Tutti i software utilizzati in connessione con la fornitura dei servizi e la raccolta, l'adattamento e la predisposizione dei contenuti del Sito sono di esclusiva proprietà della Società e godono della protezione giuridica accordata dalle leggi e dai regolamenti in materia di proprietà intellettuale ed industriale sia italiani che internazionali.
+                <br />L'uso non autorizzato del Materiale può, perciò, costituire violazione della normativa in materia di proprietà intellettuale.
+                <br />Tutte le indicazioni contenute nel Materiale originale, relative ai diritti di proprietà intellettuale dovranno essere mantenute nelle copie del Materiale che l'Utente farà.
+                <br />L'Utente non è autorizzato a vendere, modificare, riprodurre, esporre, utilizzare pubblicamente, distribuire, o comunque impiegare il Materiale in qualsivoglia altro modo, a fini commerciali o comunque pubblici.  L'Utente si impegna altresì a non sfruttare a fini commerciali i servizi offerti sul Sito o l'accesso allo stesso.
+                <br />L'utilizzo del Materiale, a qualunque scopo, su qualsiasi altro Sito o nell'ambito delle altre attività comunque connesse al network, è proibito.
+                <br />Non sono in alcun modo consentite la copia o comunque la modifica del codice HTML, creato dalla Società per la realizzazione delle pagine del Sito.  Il codice stesso è protetto dal diritto d'autore della Società.
+                <br />L'accesso al Materiale in certi Paesi o da parte di certe persone potrebbe non essere legale.
+                <br /><br />
+                <b>3. Uso consentito del Sito</b>
+
+                <br /><b>Regole generali:</b> gli Utenti non possono usufruire del Sito allo scopo di trasmettere, distribuire, memorizzare o distruggere Materiale (a) in violazione delle leggi o regolamenti applicabili, (b) in maniera tale da violare diritti d'autore, marchi, segreti industriali o altrui diritti di proprietà intellettuale, o comunque violare la privacy, o diritti personali di terzi, (c) in maniera comunque diffamatoria, oscena o contraria al buon costume o all'ordine pubblico.
+                <br /><b>Regole di sicurezza:</b> gli Utenti non devono violare o comunque tentare di violare il sistema di sicurezza del Sito.  È altresì proibito (a) accedere a dati non consentiti al tipo di Utente o inserirsi nel server o in un account, il cui accesso non è consentito all'Utente, (b) tentare di analizzare, scoprire o testare la vulnerabilità del sistema o del network o violare la sicurezza o le misure di identificazione senza specifica autorizzazione, (c) tentare di interferire con il servizio fornito ad uno qualsiasi degli altri Utenti, compresa, senza alcun intento limitativo, l'interferenza realizzata introducendo un virus nel Sito, sovraccaricando il sistema o mediante l'utilizzo di tecniche di flooding, spamming, mailbombing o crashing, (d) spedire e-mail non richieste, comprese promozioni e/o pubblicità di prodotti o servizi, o (e) contraffare qualsiasi TCP/IP packet header o qualsiasi informazione relativa all'intestazione di messaggi di e-mail individuali o rivolti a gruppi di persone (newsgroup).
+                <br />Le violazioni delle misure di sicurezza del sistema o del network possono comportare responsabilità civile o penale.  La Società provvederà pertanto ad indagare su quei comportamenti che potrebbero risultare in violazione di leggi penali o civili e potrà coinvolgere, o cooperare con, le competenti Autorità nel perseguire gli Utenti coinvolti in tali violazioni.
+                <br /><br />
+                <b>4. Usi specifici proibiti</b>
+                <br />Il Sito può essere utilizzato soltanto per gli usi consentiti dalla legge da soggetti alla ricerca di impiego o di informazioni relative a future prospettive di lavoro e da datori di lavoro alla ricerca di personale.  La Società proibisce le seguenti modalità di utilizzo del Sito (e tutti gli Utenti accettano di non usufruire del Sito in tal modo):
+                <br />
+                <br />(a) l'inserimento di informazioni personali incomplete, false, imprecise o comunque di informazioni che non corrispondono al proprio personale ed effettivo CV;
+                <br />(b) l'inserimento di accordi di franchising o di distribuzione, di c.d. piramidi, di club membership, di contratti di agenzia con o senza rappresentanza o, in genere, di opportunità di concludere affari;
+                <br />(c) la cancellazione o la modifica di Materiale inserito da altro Utente;
+                <br />(d) l'utilizzo di qualsiasi dispositivo, software o routine che possa interferire con la funzionalità del Sito o comunque con qualunque attività condotta sul Sito stesso;
+                <br />(e) intraprendere qualunque azione che imponga un irragionevole o sproporzionato carico sull'infrastruttura del Sito;
+
+                <br />(f) rivelare o condividere la password con terzi o utilizzare la password per qualunque fine non autorizzato, laddove quest'ultima permetta l'accesso ad aree riservate del Sito;
+                <br />(g) salvo quanto diversamente previsto nelle presenti Condizioni Generali, usare o cercare di utilizzare motori di ricerca, software o altri dispositivi o meccanismi (inclusi, senza alcuna limitazione, br /owsers, spiders, robots, avatars o intelligent agents) per navigare o esplorare questo Sito, a meno che si tratti di strumenti o motori di ricerca messi a disposizione dalla Società sul Sito stesso o di br /owsers messi a disposizione del pubblico in generale (per esempio Netscape Navigator, Microsoft Explorer);
+                <br />(h) cercare di decifrare, decodificare, smontare o ricostruire il contenuto di un software utilizzato per strutturare il Sito.
+                <br />
+                <br /><b>5. Dati Personali dell'Utente</b>
+                <br />Nel momento in cui Lei accede alla procedura di registrazione sul nostro Sito, Le viene
+                richiesto di fornire alla Società alcuni dati personali (di seguito i "Dati Personali").
+                In merito al trattamento dei Suoi Dati Personali da parte della Società, La preghiamo di
+                fare riferimento alla Privacy Policy di Job.it che troverà sul nostro Sito. A tal
+                riguardo Le facciamo presente che il Suo consenso al trattamento dei Dati Personali per
+                finalità connesse ai servizi forniti sul nostro sito costituisce requisito necessario per
+                la registrazione presso Job.it e per l'inserimento dei Suoi dati nel database.
+                <br /><br />
+                <b>6. Obblighi dell'Utente</b>
+                <br />L'Utente è responsabile delle conseguenze che possono derivare dall'inserimento di dati, informazioni e materiale di ogni genere sul Sito.  È proibito all'Utente: (a) inserire materiale che sia protetto da diritto d'autore, a meno che l'Utente sia titolare del diritto d'autore o disponga dell'autorizzazione del titolare dello stesso; (b) inserire materiale che riveli segreti industriali, a meno che l'Utente sia titolare degli stessi o disponga dell'autorizzazione del titolare; (c) inserire materiale che violi diritti di proprietà intellettuale altrui o che leda la privacy altrui o diritti relativi a contratti di pubblicità; (d) caricare, pubblicare, inserire o in altro modo trasmettere materiale che sia illecito, minatorio, osceno, diffamatorio, razzista o contrario all'ordine pubblico o al buon costume; (e) inserire immagini o testi sessualmente espliciti; (f) caricare, pubblicare, inviare via e-mail, o in altro modo trasmettere o diffondere, materiale promozionale, junk mail, spam o qualsiasi altra forma di sollecitazione non autorizzati o non richiesti; (g) inserire catene di S. Antonio o piramidi; (h) falsificare la propria identità e (i) caricare, inviare via e-mail, o in altro modo trasmettere, qualsivoglia materiale che contenga virus, Trojan horses, worms, time bombs, cancelbots o altri codici, file o programmi creati per interrompere, distruggere o limitare il funzionamento dei software, degli hardware o degli impianti di telecomunicazione di terzi.  La Società non garantisce in alcun modo la veridicità, l'accuratezza e l'attendibilità delle dichiarazioni inserite dagli Utenti e non assume alcuna responsabilità per le opinioni espresse dagli Utenti.  L'Utente prende atto che la Società non garantisce la veridicità del materiale inserito da altri Utenti, perciò l'utilizzo di detto materiale avviene a rischio e pericolo dell'Utente stesso.
+                <br />La Società agisce come semplice interfaccia per la distribuzione e pubblicazione on-line delle informazioni e dei dati inseriti dal singolo Utente e non ha alcun obbligo di valutare anticipatamente le comunicazioni, i dati e le informazioni inseriti.  Laddove un Utente segnali alla Società che comunicazioni, dati o informazioni inseriti nel Sito sono presumibilmente non conformi alle presenti Condizioni Generali, la Società indagherà in merito alla segnalazione fatta e stabilirà in buona fede, e a sua sola discrezione, se rimuovere o chiedere la rimozione del suddetto materiale.  La Società si riserva il diritto di espellere gli Utenti e di proibire il successivo accesso degli stessi al Sito, laddove questi ultimi si siano resi responsabili di violazioni dei termini contrattuali o di norme di legge. La Società si riserva, inoltre, il diritto di rimuovere materiale minatorio, osceno, diffamatorio, razzista o contrario all'ordine pubblico o al buon costume. La Società potrà discrezionalmente prendere tutti i provvedimenti che riterrà necessari e opportuni in relazione al materiale fornito dall'Utente, laddove ritenga che suddetto materiale possa determinare una responsabilità della Società stessa o comunque possa causare alla Società una perdita o una diminuzione dei servizi dei suoi ISPs o di altri fornitori.
+                <br />Fatto salvo quanto previsto dalla normativa applicabile, inserendo materiale (esclusi i dati personali) nel Sito (compresi gli spazi per messaggi, forums, contests e chat rooms) l'Utente concede alla Società e alle società del gruppo TMP il diritto perpetuo, irrevocabile, che può essere dato a sua volta in licenza, non esclusivo nonché la licenza di usare, riprodurre, modificare, adattare, pubblicare, tradurre, rielaborare, distribuire, comunicare al pubblico, mostrare e utilizzare il suddetto materiale (in tutto o in parte) in tutto il mondo e/o incorporarlo in altre opere in qualunque forma, con qualunque mezzo di comunicazione o tecnologia nota al giorno d'oggi o che verrà sviluppata in futuro.
+                <br />L'Utente garantisce che l'eventuale titolare dei diritti sul materiale inserito dall'Utente stesso ha rinunciato in tutto agli stessi e gli ha validamente e irrevocabilmente conferito il diritto di concedere le licenze di cui sopra.  L'Utente permette ad ogni altro utente registrato sul Sito di accedere, mostrare, esaminare, memorizzare e riprodurre tale materiale per uso personale.
+                <br />Salvo quanto sopra disposto, il titolare mantiene tutti i diritti relativi al materiale inserito nel Sito.
+                <br /><br />
+                <b>7. Account e Password</b>
+
+                <br />Al termine della procedura di registrazione riceverete una password e una designazione di account.  Il mantenimento della segretezza della password e dell'account è Sua sola ed esclusiva responsabilità e, pertanto, Lei sarà il solo ed esclusivo responsabile per qualsiasi attività posta in essere tramite l'utilizzo della Sua password o del Suo account. Lei si impegna a comunicare tempestivamente alla Società eventuali usi non autorizzati della Sua password.
+                <br /><br />
+                <b>8. Responsabilità della Società</b>
+                <br />La Società dà la possibilità ai datori di lavoro di offrire nuove opportunità di impiego e ai lavoratori di inserire nel Sito i loro CV.  La Società non svolge alcun tipo di attività di monitoraggio e di controllo sul materiale inserito nel Sito.  La Società non è in alcun modo coinvolta nella negoziazione fra datori di lavoro e candidati: perciò, la Società non può avere alcun controllo sulla qualità, la sicurezza o la legalità delle opportunità di lavoro offerte o dei CV inseriti, sulla veridicità o l'accuratezza dei dati inseriti, sulla capacità dei datori di lavoro di offrire opportunità di lavoro ai candidati o sulla capacità lavorativa di questi ultimi.  Si tenga presente, inoltre, che avere contatti con estranei, stranieri, minorenni o persone che possono presentarsi sotto falso nome, presenta rischi di vario genere incluso quello di incorrere in danni fisici. Chi consulta il Sito si assume tutti i rischi relativi al fatto di entrare in contatto con altri Utenti attraverso il Sito stesso.
+                <br />La informiamo, inoltre, che, in considerazione del fatto che il riconoscimento dell'identità degli utenti attraverso Internet è difficile, La Società non può fornirLe alcuna assicurazione in merito alla vera identità degli utenti con cui viene a contatto.
+                <br />La Società non è coinvolta e non può essere coinvolta nei rapporti user-to-user o controllare il comportamento degli Utenti sul Sito; perciò, nel caso in cui dovessero sorgere delle controversie tra Utenti, Lei si impegna a tenere indenne la Società (o i suoi agenti o dipendenti) per ogni e qualsiasi danno dovesse subire in conseguenza di tali controversie.
+                <br />La Società non ha alcun obbligo di legge al riguardo e in generale non controlla le informazioni ed in genere il materiale forniti dagli Utenti ed inseriti nel database del Sito.  Tenga presente, inoltre, che le informazioni inserite da altri Utenti potrebbero risultare anche offensive o non accurate e, in certi casi, potrebbero essere errate o volutamente fuorvianti.  La Società si aspetta che Lei usi molta cautela e buon senso nell'utilizzare il Sito.
+                <br />La informiamo, inoltre, che il Materiale può contenere imprecisioni o errori di stampa.  La Società non garantisce l'accuratezza, l'attendibilità, la completezza o la tempestività delle informazioni contenute nel Sito o nel Materiale.  L'utilizzo del nostro Sito e del Materiale è a Suo totale rischio.  Tenga presente, altresì, che periodicamente vengono fatte delle modifiche al nostro Sito e ciò può avvenire in qualunque momento.  In ogni caso, Lei prende atto del fatto che Lei è il solo responsabile per la forma, il contenuto e l'accuratezza del/dei CV e del materiale ivi contenuto che Lei inserisce nel nostro Sito.  I datori di lavoro sono i soli responsabili per le informazioni e le offerte inserite nel Sito.
+                <br />La Società non deve essere considerata quale datore di lavoro rispetto ai servizi offerti sul Sito.  La Società, inoltre, non è in alcun modo responsabile delle decisioni riguardanti le assunzioni prese dai datori di lavoro che utilizzano il Sito.
+                <br />LA SOCIETÀ NON GARANTISCE CHE IL SITO SIA PRIVO DI ERRORI O CHE IL SITO O IL SERVER SIANO
+                PRIVI DI VIRUS O ALTRI DIFETTI TECNICI DI QUALUNQUE NATURA.  QUALORA L'UTILIZZO DEL SITO O DEL
+                MATERIALE CREI DEI DANNI AI SUOI STRUMENTI INFORMATICI O AI SUOI DATI LA SOCIETÀ NON È IN ALCUN
+                MODO RESPONSABILE PER I COSTI RELATIVI A SERVIZI DI MANUTENZIONE O A RIPARAZIONI O A
+                SOSTITUZIONI.
+                <br />I SERVIZI DEL SITO ED IL MATERIALE SONO OFFERTI SENZA ALCUN TIPO DI GARANZIA DA PARTE
+                DELLA SOCIETÁ (ON A "AS IS" BASIS).  LA SOCIETÁ, NEI LIMITI DI QUANTO PREVISTO DALLA LEGGE,
+                ESCLUDE QUALSIASI TIPO DI GARANZIA, ESPLICITA O IMPLICITA.  A TAL RIGUARDO, LA SOCIETÁ NON
+                RILASCIA ALCUNA GARANZIA IN MERITO ALL'ACCURATEZZA, ALL'AFFIDABILITÀ E ALLA COMPLETEZZA DEL
+                MATERIALE, DEI SERVIZI, DEL SOFTWARE, DEI TESTI, DEI GRAFICI E DEI LINKS.  L'UTENTE PRENDE
+                ATTO CHE LA SOCIETÀ, NÉ ALCUN ALTRO CHE ABBIA AVUTO PARTE NELLA CREAZIONE, NELLA PRODUZIONE
+                O NELLA FORNITURA DEI SERVIZI DI Job.IT POTRANNO ESSERE RITENUTI RESPONSABILI PER
+                QUALSIVOGLIA DANNO DI QUALSIASI NATURA, SIA CONTRATTUALE CHE EXTRACONTRATTUALE,
+                DERIVANTE DALL'ATTIVAZIONE O DALL'UTILIZZO DEI SERVIZI OFFERTI SUL SITO E/O DALL'INTERRUZIONE DEL FUNZIONAMENTO DEL SITO STESSO.  IN NESSUN CASO LA SOCIETÁ SARÀ RITENUTA RESPONSABILE DEL MALFUNZIONAMENTO DEI SERVIZI OFFERTI DERIVANTE DA GUASTI DELLE LINEE TELEFONICHE, ELETTRICHE, E DA SOVRACCARICHI O INTERRUZIONI DELLE RETI MONDIALI O INTERNAZIONALI.
+                <br /><br />
+                <b>9. Clausola di manleva</b>
+                <br />L'utente dichiara e garantisce di tenere indenne e di manlevare la Società nonché i soggetti ad essa collegati o da essa controllati, i suoi rappresentanti e i suoi dipendenti da qualsiasi obbligo risarcitorio (incluse le ragionevoli spese legali) che possa originarsi a loro carico in relazione all'utilizzo del Sito e del Materiale da parte dell'Utente o alla violazione delle presenti Condizioni Generali.
+                <br /><br />
+
+                <b>10. Links con altri siti</b>
+                <br />Il Sito contiene links con altri siti.  Questi links sono stati creati per Sua comodità e la Società non è in alcun modo responsabile per i contenuti di questi siti: la Società, perciò, non rilascia alcuna garanzia in merito al contenuto e all'accuratezza del materiale presente sui siti suddetti.  Qualora Lei decida di accedere a siti che hanno un link con Job.it, tale accesso avverrà sotto la Sua sola responsabilità.
+                <br />Divieto di rivendita o di uso commerciale non autorizzato.
+                <br />Lei si impegna a non rivendere o cedere i Suoi diritti o le Sue obbligazioni derivanti dalle presenti Condizioni Generali di utilizzo del Sito.  Lei si impegna, inoltre, a non fare un uso commerciale non autorizzato del Sito.
+                <br /><br />
+                <b>11. Limitazione di responsabilità</b>
+                <br />Il tetto massimo di danni risarcibili da parte della Società in relazione ad azioni giudiziarie da Lei intraprese in relazione all'utilizzo del Materiale è di $100.
+                <br /><br />
+                <b>12. Durata e risoluzione del rapporto</b>
+                <br />L'Utente riconosce che la Società può, a sua discrezione, disconnettere la password e l'account  dell'Utente o interrompere l'utilizzo del servizio in ogni momento, previa comunicazione scritta via e-mail da inviarsi all'Utente con un preavviso di almeno 5 giorni.  La Società si riserva il diritto di dichiarare risolto il presente contratto, ai sensi dell'articolo 1456 del Codice Civile, con comunicazione scritta da inviarsi all'Utente via e-mail, nel caso in cui l'Utente sia inadempiente ad una delle obbligazioni di cui agli articoli 2, 3, 4, 6 e 10 delle presenti Condizioni Generali.
+                <br /><br />
+                <b>13. Disposizioni generali</b>
+                <br />Qualora una delle previsioni di codeste Condizioni Generali dovesse essere ritenuta invalida da parte dell'autorità giudiziaria competente, l'invalidità di tale previsione non inficerà la validità delle rimanenti previsioni che continueranno a restare in vigore.  Fatto salvo quanto espressamente previsto in ulteriori condizioni contrattuali per l'uso del Sito, con una particolare Nota legale o nella Licenza di Software o su altre particolari pagine Web, le presenti Condizioni Generali contengono tutte le previsioni che regolano il rapporto contrattuale tra Lei e la Società in relazione all'uso del Sito.
+
+                <br /><br />
+                <b>14. Ulteriori condizioni per l'uso del Sito</b>
+                <br />Altre aree di questo Sito sono soggette ad ulteriori e differenti termini e condizioni
+                di utilizzo dei servizi.  Utilizzando tali diverse aree del Sito Lei accetta di sottoporsi
+                alle ulteriori previsioni applicabili alle aree stesse.
+                <br /><br />
+                <b>15. Legge applicabile e Clausola Compromissoria</b>
+                <br />Le presenti Condizioni Generali ed i rapporti tra la Società e l'Utente sono regolati dalla legge della Repubblica Italiana.
+                <br />Tutte le controversie eventualmente derivanti dal presente contratto saranno risolte in via definitiva secondo il Regolamento di Conciliazione ed Arbitrato Nazionale della Camera Arbitrale Nazionale ed Internazionale di Milano da tre arbitri nominati in conformità a detto Regolamento, i quali giudicheranno in via rituale e secondo diritto.  Sede dell'Arbitrato sarà Milano.
+            </div>
+
+            <div><br />Queste sono la <a href="#">Dichiarazione sulla Privacy</a> e la <a href="#">Informativa sulla Privacy</a> che devi sottoscrivere per <br />creare un account.</div>
+            <div class="legalQuestionTextArea"><strong>Informativa ai sensi dell'art. 13 del Decreto Legislativo n 196 del 2003</strong>
+
+                Ai sensi dell’articolo 13 del D.lvo. 196/03 sulla privacy (di seguito Codice privacy), Job Italia S.r.l., con sede legale a Milano, in Via Boscovich, 18, Titolare del trattamento, Le fornisce quindi le seguenti informazioni:
+                <br />
+                1. il trattamento, che sarà effettuato con strumenti automatizzati e manuali, ha le seguenti finalità:
+                <br />
+                a. mettere in contatto i candidati e le aziende che sono interessate a selezionare e a reclutare personale per l’instaurazione di un rapporto di lavoro o di collaborazione, attraverso i CV che lei vorrà caricare alla pagina “gestisci CV”;
+                <br />
+                b. inviarle via mail, previo consenso che Lei vorrà esercitare spuntando facoltativamente le opportune caselle nelle pagine seguenti, comunicazioni sul mondo del lavoro (newsletter) o annunci di lavoro in linea con le sue necessità;
+                <br />
+                2. lei potrà scegliere di compilare campi non obbligatori, (partecipazioni in associazioni ed hobby), oppure caricare una sua immagine, che verranno trattati per le finalità su indicate;
+                <br />
+                3. il conferimento dei dati di cui al punto a) è necessario e un eventuale rifiuto può comportare l’impossibilità di realizzare l’attività di reclutamento e selezione su menzionata;
+                <br />
+                4. il conferimento dei dati di cui ai punto b) e 2) è facoltativo e un eventuale rifiuto può comportare l’impossibilità di offrirle servizi aggiuntivi che la possono aiutare nella sua ricerca di lavoro;
+                <br />
+
+                5. i dati non saranno diffusi;
+                <br />
+                6. se lei deciderà di rendere pubblici i suoi curricula, questi potranno essere comunicati alle aziende nostre clienti per la Sua collocazione presso le stesse; inoltre, se nel suo profilo, lei indicherà di voler lavorare all’estero, i suoi curricula potranno essere comunicati alle altre società del gruppo che operano nel settore reclutamento e selezione nel paese da lei indicato, per offrirLe migliori opportunità di perseguimento degli obiettivi cui la raccolta stessa è finalizzata;
+                <br />
+                7. i dati, compresi i cookies di navigazione attraverso il sito, saranno conservati, per il periodo strettamente necessario al perseguimento delle finalità su indicate, comunque per un periodo di tempo non superiore a 18 mesi;
+                <br />
+                8. gli incaricati che si occupano della gestione dei curricula possono venire a conoscenza dei suoi dati personali esclusivamente per le finalità su menzionate;
+                <br />
+                9. il Responsabile esterno del trattamento è Protection Trade S.r.l., con sede in Largo Marconi, 13 – Itri (LT); l’elenco aggiornato degli altri responsabili può essere visionato inoltrando la richiesta al seguente indirizzo e-mail <a href="mailto: Job@protectiontrade.it">Job@protectiontrade.it</a>.
+
+                Lei potrà rivolgersi al Titolare o al Responsabile per far valere i Suoi diritti così come previsto dall’articolo 7 del Codice privacy tra cui quello di ottenere la conferma dell’esistenza o meno di propri Dati personali e di consentirgliene, nel caso, la messa a disposizione. Lei potrà pertanto chiedere di avere conoscenza dell’origine dei dati nonché della logica e delle finalità del trattamento; di ottenere la cancellazione, la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge, nonché l’aggiornamento, la rettifica o, se vi è interesse, l’integrazione dei dati stessi; di opporsi, per motivi legittimi, al trattamento. Tali richieste possono essere inoltrate al seguente indirizzo di posta elettronica: <a href="mailto: job@protectiontrade.it">job@protectiontrade.it</a>.
+                <strong>Attenzione</strong>
+
+                Qualora il Suo CV contenesse dati di natura sensibile (p.es. stato di salute, appartenenza a categorie protette, ecc.) dovr&agrave; stampare ed inviare a Job Italia S.r.l., Via Boscovich, 18, 20124, Milano, la seguente formula di consenso altrimenti Job non potr&agrave; trattare i dati in esso contenuti:
+                <br />
+                Letta l'informativa di cui all'art. 13, D.lgs. 196/03, ai sensi dell'articolo 23 dello stesso, conferisco il consenso ai seguenti trattamenti dei miei dati personali:
+                <br />
+                - trattamento e comunicazione dei dati sensibili di cui all'art. 4 lettera d) del D.lgs. 196/03, finalizzato reclutamento del personale e alla collocazione del candidato presso le aziende clienti di Job Italia e delle societ&agrave; internazionali del gruppo;
+            </div>
+
+
+            <table>
+                <tr>
+                    <td><input type="submit" name="registrazione" value="registrazione" onmousedown="javascript:verificaRegUtente();"  /></td>
+                </tr>
+            </table>
+        </form>
+    </li>
+</ul>
+<#include "footer.html">
+

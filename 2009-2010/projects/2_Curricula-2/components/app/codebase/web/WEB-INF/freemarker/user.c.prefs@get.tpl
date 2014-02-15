@@ -1,0 +1,7 @@
+[#include '/_tags_/all.tpl']
+[#import '/pages/main.tpl' as page]
+[@response.do]
+    [@page.do]
+        [#include '/blocks/user.c.prefs.tpl']
+    [/@page.do]
+[/@response.do]

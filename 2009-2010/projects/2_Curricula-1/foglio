@@ -1,0 +1,18 @@
+NOME PROGETTO: Job Web
+
+AUTORI:
+Ricci Francesco 179399	Programmazione JAVA con particolare attenzione alla ricerca
+Troiano Franco xxxxxx	Programmazione JAVA con particolare attenzione alla modifica
+D'Ettorre Marco xxxxxx	Template grafico (XHTML, CSS), implementazione Freemarker
+
+TECNOLOGIE UTILIZZATE LATO CLIENT
+XHTML Strict, CSS 2.0, Javascript
+
+TECNOLOGIE UTILIZZATE LATO SERVER
+JSP, mySQL, Freemarker, libreria mysql-connector-java
+
+BROWSER COMPATIBILI
+Spunta tutto
+
+DATA CONSEGNA PROGETTO
+27/06/2010

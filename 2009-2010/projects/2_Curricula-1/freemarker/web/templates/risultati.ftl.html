@@ -1,0 +1,38 @@
+        <h1>Risultati esame numero ${idesame}</h1>
+        ${test}
+        
+        <#if (lista?size > 0)>
+
+            <#list lista as ris>
+            ${ris?html}<br>
+
+            </#list>
+
+           <#else>
+
+        <p>Non ci sono risultati disponibili</p>
+
+        </#if>
+
+
+        <#if (risultati?size > 0)>
+        
+        <table border="1">
+            
+            <tr><th>Nome</th><th>Matricola</th><th>Voto</th></tr>
+            
+            <#list risultati as risultato>
+            
+            <tr>
+                <td>${risultato.nome?html}</td><td>${risultato.matricola}</td><td>${risultato.voto}</td>
+            </tr>
+            
+            </#list>
+            
+        </table>
+        
+        <#else>
+        
+        <p>Non ci sono risultati disponibili</p>
+        
+        </#if>

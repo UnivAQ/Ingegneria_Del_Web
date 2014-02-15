@@ -1,0 +1,107 @@
+<#include "header.html">
+<h3 id="why">Modifica i tuoi titoli di studio</h3>
+<ul id="maincon">
+    <li>
+        <img src="images/image2.jpg" class="img_head" alt="image1" />
+
+        <form method="post" action="aggiornamento?id_ist=${istruzione.key}">
+            <table class="inserimento">
+                <tr>
+                    <td><input type="hidden" name="save" value="1"/></td>
+                    <td><input type="hidden" name="opt" value="1"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento"> Tipo:</span></td>
+                    <td> <select name="tipologia">
+                            <option value="${istruzione.tipologia}">${istruzione.tipologia}</option>
+                            <option value="0">Licenza Media</option>
+                            <option value="1">Diploma</option>
+                            <option value="2">Laurea Base</option>
+                            <option value="3">Laurea Specialistica</option>
+                            <option value="4">Master</option>
+                            <option value="5">Altro</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento">Titolo:</span></td>
+                    <td><input name="titolo" id="titolo" type="text" value="${istruzione.titolo}"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento"> Istituzione:</span></td>
+                    <td><input name="istituzione" id="istituzione" type="text" value="${istruzione.istituzione}"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento"> Data conseguimento:</span></td>
+                    <td><input name="data" id="data" type="text" value="${istruzione.data}"/></td>
+                </tr>
+
+                <tr>
+                    <td><span class="inserimento">Voto:</span></td>
+                    <td><input name="voto" id="voto" type="text" value="${istruzione.voto}"/></td>
+                </tr>
+                <tr>
+                    <td><input value="salva" name="salva" type="submit"/></td>
+                </tr>
+            </table>
+            <div> <br /> <br /></div>
+            <h3> Raccomandazioni generali</h3>
+            <div> Prima di cominciare a redigere il vostro CV, ricordate alcuni principi importanti:
+                Redigete con cura il vostro CV.
+                Presentate le vostre qualificazioni e competenze in modo chiaro e logico, per valorizzare i vostri punti
+                forti.<br /></div>
+            <h3>Concentratevi sull&#8217;essenziale</h3>
+            <div> Il CV deve essere breve: in genere, 2 pagine bastano per valorizzare il vostro profilo. 3 pagine
+                possono sembrare eccessive in alcuni paesi, anche se avete una vasta esperienza professionale.
+                Se quest’ultima è ancora limitata (ad es. se avete appena terminato la scuola o l'università),
+                invertite l’ordine delle voci e cominciate dal punto «Istruzione e formazione»; sottolineate i periodi di
+                tirocinio svolti durante gli studi (cfr. gli esempi di CV);
+                Concentratevi sulle informazioni essenziali che danno un valore aggiunto alla vostra candidatura:
+                perciò non occorre menzionare una vecchia esperienza professionale o senza alcun rapporto con
+                la vostra candidatura.
+                Adeguate il vostro CV in funzione dell’impiego che cercate
+                Rileggete sistematicamente il vostro CV prima di inviarlo a un datore di lavoro per verificare che
+                corrisponda al profilo richiesto; valorizzate i punti forti della vostra candidatura. Cercate di ottenere
+                informazioni sull’azienda interessata per meglio adattare il vostro CV al profilo richiesto.
+                Attenzione: non mentite nel vostro CV: rischiate di screditarvi nel corso del colloquio.
+            <br /></div>
+            <h3>Rispettate la strutture del modello</h3>
+            <div>Il CV Europass vi permette di presentare le vostre qualifiche, attitudini e competenze in modo logico:
+                - informazioni personali;
+                - descrizione dell’esperienza professionale;
+                - descrizione del vostro percorso educativo e formativo (che potete collocare prima della voce
+                «Esperienza professionale» se quest’ultima è limitata; per invertire l'ordine delle voci, usate la
+                funzione «copia/incolla» del vostro trattamento testi);
+                - descrizione dettagliata delle voste capacità e competenze, acquisite nel corso del percorso
+                formativo, della carriera professionale o della vita quotidiana.<br />
+            </div>
+            <h3>Nota:</h3>
+            <div>La lettura del CV deve permettere al reclutatore di conoscere il vostro profilo in pochi secondi. Perciò:
+                - usate frasi brevi;
+                - concentratevi sui principali elementi della vostra formazione e della vostra esperienza
+                professionale;
+                - giustificate le eventuali interruzioni nei vostri studi o nella vostra carriera;
+                - eliminate tutte le voci su cui non avete nulla da dire (ad es., se non avete alcuna capacità o
+                competenza artistica (v. pag. 2 del modello) o se ritenete che tale voce non comporti alcun valore
+                aggiunto alla vostra candidatura, eliminatela usando la funzione «taglia» del vostro software per il
+                trattamento testi. Tutte le voci indicate come facoltative possono essere tolte se le ritenete inutili.
+            </div>
+
+        </form>
+
+
+
+
+        <br />
+
+    </li>
+</ul>
+
+<#include "footer.html">
+
+
+
+

@@ -1,0 +1,222 @@
+<#include "header.html">
+<h3 id="why">Modifica i tuoi dati personali</h3>
+<ul id="maincon">
+    <li>
+        <img src="images/image1.jpg" class="img_head" alt="image1" />
+
+        <form method="post" action="aggiornamento?id_cur=${key}">
+            <table class="inserimento">
+                <tr>
+                    <td>  <input type="hidden" name="save" value="0"/></td>
+                    <td>   <input type="hidden" name="opt" value="1"/></td>
+                </tr>
+
+                <tr>
+                    <td><label for="nome" class="modifica?save=0">Nome:</label></td>
+                    <td><input name="nome" id="nome" type="text" value="${nome}"/></td>
+                </tr>
+                <tr>
+                    <td><label for="cognome" class="inserimento">Cognome:</label></td>
+                    <td><input name="cognome" id="cognome" type="text" value="${cognome}"/></td>
+                </tr>
+                <tr>
+                    <td><label for="sesso" class="inserimento">Sesso:</label></td>
+                    <td>M <input name="sesso" id="sesso" type="radio" value="M" <#if (sesso=="M")>checked="checked"</#if> /> F<input name="sesso" id="sesso" type="radio" value="F" <#if (sesso=="F")>checked="checked"</#if>/> </td>
+                </tr>
+                <tr>
+                    <td><label for="dataNascita" class="inserimento">Data Nascita:</label></td>
+                    <td><input  name="dataNascita" id="dataNascita" type="text" value="${dataNascita}"/></td>
+                </tr>
+                <tr>
+                    <td><label for="indirizzo" class="inserimento">Indirizzo:</label></td>
+                    <td><input name="indirizzo" id="indirizzo" type="text" value="${indirizzo}"/></td>
+                </tr>
+                <tr>
+                    <td><label for="provincia" class="inserimento">Provincia:</label></td>
+                    <td><select name="provincia" id="provincia">
+                            <option value="${provincia}">${provincia}</option>
+                            <option value="AG">Agrigento</option>
+                            <option value="AL">Alessandria</option>
+                            <option value="AN">Ancona</option>
+                            <option value="AO">Aosta</option>
+
+                            <option value="AR">Arezzo</option>
+                            <option value="AP">Ascoli Piceno</option>
+                            <option value="AT">Asti</option>
+                            <option value="AV">Avellino</option>
+                            <option value="BA">Bari</option>
+                            <option value="BL">Belluno</option>
+
+                            <option value="BN">Benevento</option>
+                            <option value="BG">Bergamo</option>
+                            <option value="BI">Biella</option>
+                            <option value="Bo">Bologna</option>
+                            <option value="BZ">Bolzano</option>
+                            <option value="BS">Brescia</option>
+
+                            <option value="BR">Brindisi</option>
+                            <option value="CA">Cagliari</option>
+                            <option value="CL">Caltanissetta</option>
+                            <option value="CB">Campobasso</option>
+                            <option value="CE">Caserta</option>
+                            <option value="CT">Catania</option>
+
+                            <option value="CZ">Catanzaro</option>
+                            <option value="CH">Chieti</option>
+                            <option value="Co">Como</option>
+                            <option value="CS">Cosenza</option>
+                            <option value="CR">Cremona</option>
+                            <option value="KR">Crotone</option>
+
+                            <option value="CN">Cuneo</option>
+                            <option value="EN">Enna</option>
+                            <option value="FE">Ferrara</option>
+                            <option value="FI">Firenze</option>
+                            <option value="FG">Foggia</option>
+                            <option value="Fo">Forlì</option>
+
+                            <option value="FR">Frosinone</option>
+                            <option value="GE">Genova</option>
+                            <option value="Go">Gorizia</option>
+                            <option value="GR">Grosseto</option>
+                            <option value="IM">Imperia</option>
+                            <option value="IS">Isernia</option>
+
+                            <option value="AQ">L'Aquila</option>
+                            <option value="SP">La Spezia</option>
+                            <option value="LT">Latina</option>
+                            <option value="LE">Lecce</option>
+                            <option value="LC">Lecco</option>
+                            <option value="LI">Livorno</option>
+
+                            <option value="Lo">Lodi</option>
+                            <option value="LU">Lucca</option>
+                            <option value="MC">Macerata</option>
+                            <option value="MN">Mantova</option>
+                            <option value="MS">Massa-Carrara</option>
+                            <option value="MT">Matera</option>
+
+                            <option value="ME">Messina</option>
+                            <option value="MI">Milano</option>
+                            <option value="Mo">Modena</option>
+                            <option value="NA">Napoli</option>
+                            <option value="No">Novara</option>
+                            <option value="NU">Nuoro</option>
+
+                            <option value="oR">oristano</option>
+                            <option value="PD">Padova</option>
+                            <option value="PA">Palermo</option>
+                            <option value="PR">Parma</option>
+                            <option value="PV">Pavia</option>
+                            <option value="PG">Perugia</option>
+
+                            <option value="PS">Pesaro e Urbino</option>
+                            <option value="PE">Pescara</option>
+                            <option value="PC">Piacenza</option>
+                            <option value="PI">Pisa</option>
+                            <option value="PT">Pistoia</option>
+                            <option value="PN">Pordenone</option>
+
+                            <option value="PZ">Potenza</option>
+                            <option value="Po">Prato</option>
+                            <option value="RG">Ragusa</option>
+                            <option value="RA">Ravenna</option>
+                            <option value="RC">Reggio Calabria</option>
+                            <option value="RE">Reggio Emilia</option>
+
+                            <option value="RI">Rieti</option>
+                            <option value="RN">Rimini</option>
+                            <option value="RM">Roma</option>
+                            <option value="Ro">Rovigo</option>
+                            <option value="SA">Salerno</option>
+                            <option value="SS">Sassari</option>
+
+                            <option value="SV">Savona</option>
+                            <option value="SI">Siena</option>
+                            <option value="SR">Siracusa</option>
+                            <option value="So">Sondrio</option>
+                            <option value="TA">Taranto</option>
+                            <option value="TE">Teramo</option>
+
+                            <option value="TR">Terni</option>
+                            <option value="TO">Torino</option>
+                            <option value="TP">Trapani</option>
+                            <option value="TN">Trento</option>
+                            <option value="TV">Treviso</option>
+                            <option value="TS">Trieste</option>
+
+                            <option value="UD">Udine</option>
+                            <option value="VA">Varese</option>
+                            <option value="VE">Venezia</option>
+                            <option value="VB">Verbania</option>
+                            <option value="VC">Vercelli</option>
+                            <option value="VR">Verona</option>
+
+                            <option value="VV">Vibo Valentia</option>
+                            <option value="VI">Vicenza</option>
+                            <option value="VT">Viterbo</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><label for="email" class="inserimento">E-Mail:</label></td>
+                    <td><input name="email" id="email" type="text" value="${email}"/></td>
+                </tr>
+                <tr>
+                    <td><label for="telefono" class="inserimento">Telefono:</label></td>
+                    <td><input name="telefono" id="telefono" type="text" value="${telefono}"/></td>
+                </tr>
+                <tr>
+                    <td><input value="salva" name="salva" type="submit"/></td>
+                </tr>
+
+            </table>
+            <br/><br/><br/>
+
+            <h3> Raccomandazioni generali</h3>
+            Prima di cominciare a redigere il vostro CV, ricordate alcuni principi importanti:
+            Redigete con cura il vostro CV
+
+            Presentate le vostre qualificazioni e competenze in modo chiaro e logico, per valorizzare i vostri punti
+            forti.
+            <h3>Concentratevi sull&#8217;essenziale</h3>
+            Il CV deve essere breve: in genere, 2 pagine bastano per valorizzare il vostro profilo. 3 pagine
+            possono sembrare eccessive in alcuni paesi, anche se avete una vasta esperienza professionale.
+            Se quest’ultima è ancora limitata (ad es. se avete appena terminato la scuola o l'università),
+            invertite l’ordine delle voci e cominciate dal punto «Istruzione e formazione»; sottolineate i periodi di
+            tirocinio svolti durante gli studi (cfr. gli esempi di CV);
+            Concentratevi sulle informazioni essenziali che danno un valore aggiunto alla vostra candidatura:
+            perciò non occorre menzionare una vecchia esperienza professionale o senza alcun rapporto con
+            la vostra candidatura.
+            Adeguate il vostro CV in funzione dell’impiego che cercate
+            Rileggete sistematicamente il vostro CV prima di inviarlo a un datore di lavoro per verificare che
+            corrisponda al profilo richiesto; valorizzate i punti forti della vostra candidatura. Cercate di ottenere
+            informazioni sull’azienda interessata per meglio adattare il vostro CV al profilo richiesto.
+            Attenzione: non mentite nel vostro CV: rischiate di screditarvi nel corso del colloquio.
+
+            <h3>Rispettate la strutture del modello</h3>
+            Il CV Europass vi permette di presentare le vostre qualifiche, attitudini e competenze in modo logico:
+            - informazioni personali;
+            - descrizione dell’esperienza professionale;
+            - descrizione del vostro percorso educativo e formativo (che potete collocare prima della voce
+            «Esperienza professionale» se quest’ultima è limitata; per invertire l'ordine delle voci, usate la
+            funzione «copia/incolla» del vostro trattamento testi);
+            - descrizione dettagliata delle voste capacità e competenze, acquisite nel corso del percorso
+            formativo, della carriera professionale o della vita quotidiana.
+            <h3>Nota:</h3>
+            La lettura del CV deve permettere al reclutatore di conoscere il vostro profilo in pochi secondi. Perciò:
+            - usate frasi brevi;
+            - concentratevi sui principali elementi della vostra formazione e della vostra esperienza
+            professionale;
+            - giustificate le eventuali interruzioni nei vostri studi o nella vostra carriera;
+            - eliminate tutte le voci su cui non avete nulla da dire (ad es., se non avete alcuna capacità o
+            competenza artistica (v. pag. 2 del modello) o se ritenete che tale voce non comporti alcun valore
+            aggiunto alla vostra candidatura, eliminatela usando la funzione «taglia» del vostro software per il
+            trattamento testi. Tutte le voci indicate come facoltative possono essere tolte se le ritenete inutili.
+
+        </form>
+    </li>
+</ul>
+
+
+
+<#include "footer.html">

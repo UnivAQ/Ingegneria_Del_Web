@@ -1,0 +1,556 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    outline: none;
+    text-decoration: none;
+}
+
+code, kbd, samp, pre, tt, var, textarea, input, select, isindex, listing, xmp, plaintext { font: inherit; font-size: 1em; white-space: normal; }
+dfn, i, cite, var, address, em { font-style: normal; }
+th, b, strong, h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+a, img, a img, iframe, form, fieldset, abbr, acronym, object, applet, table { border: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td, center { text-align: left; vertical-align: top; }
+body { line-height: 1; background: white; color: black; }
+q { quotes: "" ""; }
+ul, ol, dir, menu { list-style: none; }
+sub, sup { vertical-align: baseline; }
+a { color: inherit; }
+hr { display: none; } 
+font { color: inherit !important; font: inherit !important; color: inherit !important; } 
+marquee { overflow: inherit !important; -moz-binding: none; }
+blink { text-decoration: none; }
+nobr { white-space: normal; }
+
+body {
+    background:#FF9500 url(img/sfondo_body.gif) top left repeat-x;
+    text-align:center;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+strong {
+    font-weight:bold;
+}
+
+em {
+    font-style:italic;
+}
+
+.item {display: block;word-spacing: normal; margin:0 0 5px 9px;}
+
+/*gestione img miniature*/
+.miniatura
+{
+    width:122px;
+    height:90px;
+}
+
+.clear {clear:both;}
+
+#container {
+    width:970px;
+    margin:0 auto;
+    display:block;
+    height:auto!important;
+    height:500px;
+    min-height:500px;
+    text-align:left;
+}
+
+/* menu navigazione */
+
+#navi {
+    width:970px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* menu navigazione network */
+
+
+
+#navi .menu {
+    display:block;
+    float:left;
+    width:600px;
+}
+
+#navi .menu li {
+    display:inline;
+}
+
+#navi .menu a {
+    height:18px;
+    color:#990000;
+    float:left;
+    padding:5px 10px 0 10px;
+}
+
+#navi .menu a:hover {
+    background:#FFCB7C;
+    color:#000;
+}
+
+#navi .menu a.active {
+    background:#fff;
+}
+
+/* menu navigazione forum */
+
+#navi .forum {
+    float:right;
+    color:#000;
+    padding:5px 0 0 0;
+    height:18px;
+}
+
+#navi .forum .messaggi{
+    display:block;
+}
+
+#navi .forum .messaggi img{
+    float:left;
+}
+
+#navi .forum li{
+    display:inline;
+}
+
+#navi .forum a {
+    display:block;
+    float:left;
+    padding:0 5px;
+    color:#000;
+}
+
+#navi .forum strong {
+    display:block;
+    float:left;
+    padding:0 5px;
+    font-weight:bold;
+}
+
+/* header */
+
+#header {
+    display:block;
+    height:75px;
+    width:970px;
+    position:relative;
+}
+
+h1 a{
+    text-indent:-9999px;
+    background:url(img/logo.jpg) bottom left no-repeat;
+    width:350px;
+    height:74px;
+    float:left;
+    display:block;
+}
+
+/* header ricerca */
+
+#search-c-area {
+    padding-top: 25px;
+}
+
+/* corpo */
+
+#corpo {
+    width:926px;
+    height:auto!important;
+    min-height:100px;
+    height:100px;
+    padding:0 22px;
+    background:#fff url(img/sfondo_corpo.gif) top left no-repeat;
+    position:relative;
+}
+
+/*Colonna SX*/
+
+#colonnasx{
+    height:auto!important;
+    min-height:600px;
+    height:600px;
+    display:block;
+    width:570px;
+    padding:40px 0 20px 0;
+}
+
+.colonnasx-content {
+    padding-top: 45px;
+    text-align: justify;
+}
+
+#alert{
+    background: url("img/alert.gif") no-repeat scroll right center #FFFF00;
+    border-color: #FF6E00 -moz-use-text-color;
+    border-style: solid none;
+    border-width: 1px 0;
+    color: #FF0000;
+    display:block;
+    font-size: 10px;
+    margin: 5px 0;
+    padding: 9px 20px;
+
+}
+
+#alertok{
+    background: url("img/alert_ok.gif") no-repeat scroll right center #C2D98B;
+    border-color: #FF6E00 -moz-use-text-color;
+    border-style: solid none;
+    border-width: 1px 0;
+    color: #FF0000;
+    display:block;
+    font-size: 10px;
+    margin: 5px 0;
+    padding: 9px 20px;
+
+}
+
+/*sub menu*/
+
+#submenu {
+    width:570px;
+    height:43px;
+    display:block;
+}
+
+#submenu li{
+    display:inline;
+}
+
+#submenu a {
+    display:block;
+    float:left;
+    height: 25px;
+    font-family: Verdana,Arial,sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+
+#submenu a.cv-search {
+    display:block;
+    width:282px;
+    margin-right: 3px;
+    background:#FF8400;
+    color: white;
+    -webkit-border-top-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    border-top-left-radius: 15px;
+}
+
+#submenu a:hover.cv-search {
+    background:#FFCB7C;
+    color:#990000;
+}
+#submenu a.cv-search_active {
+    display:block;
+    width:282px;
+    margin-right: 3px;
+    background:#FFCB7C;
+    color:#990000;
+    -webkit-border-top-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    border-top-left-radius: 15px;
+}
+
+#submenu a.oneshot {
+    display:block;
+    width:282px;
+    margin-left: 3px;
+    background:#FF8400;
+    color: white;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-right-radius: 15px;
+}
+
+#submenu .oneshot img {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+#submenu a.oneshot span {
+    text-align: center;
+}
+
+#submenu a:hover.oneshot {
+    background:#FFCB7C;
+    color:#990000;
+}
+
+#submenu a.oneshot_active {
+    display:block;
+    width:282px;
+    margin-left: 3px;
+    background:#FFCB7C;
+    color:#990000;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-right-radius: 15px;
+}
+
+#submenu .oneshot_active img {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+#submenu a.back-home {
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #990000;
+}
+
+
+#submenu .back-home img {
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 18px;
+}
+
+/* Riepilogo curriculum visto dall'azienda */
+
+#colonnasx .curriculumvitae {
+    padding:0;
+    display:block;
+}
+
+#colonnasx .curriculumvitae table {
+    width: 550px;
+    border: 1px dotted gray;
+    margin: 10px;
+}
+
+#colonnasx .curriculumvitae table caption, th, tr, td{
+    padding:5px;
+    border: 1px dotted gray;
+}
+
+#colonnasx .curriculumvitae table caption{
+    border:none;
+}
+
+#colonnasx .curriculumvitae span.cv-anagrafic-int {
+    background:url(img/curr_cv.jpg) top left no-repeat;
+    font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+    font-size:15px;
+    height:42px;
+    width:510px;
+    display:block;
+    color:#fff;
+    padding:30px 0 0 60px;
+    font-weight:bold;
+}
+
+#colonnasx .curriculumvitae span.cv-experiences-int{
+    background:url(img/curr_esperienze.jpg) top left no-repeat;
+    font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+    font-size:15px;
+    height:42px;
+    width:510px;
+    display:block;
+    color:#fff;
+    padding:30px 0 0 70px;
+    font-weight:bold;
+}
+
+#colonnasx .curriculumvitae span.cv-skills-int{
+    background:url(img/curr_conoscenze.jpg) top left no-repeat;
+    font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+    font-size:15px;
+    height:42px;
+    width:510px;
+    display:block;
+    color:#fff;
+    padding:30px 0 0 60px;
+    font-weight:bold;
+    text-align:left;
+    float:none;
+}
+
+#colonnasx .curriculumvitae span.cv-details-int{
+    background:url(img/curr_cv.jpg) top left no-repeat;
+    font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+    font-size:15px;
+    height:42px;
+    width:510px;
+    display:block;
+    color:#fff;
+    padding:30px 0 0 60px;
+    font-weight:bold;
+}
+
+#colonnasx .curriculumvitae ul {
+    display:block;
+    padding:10px;
+}
+
+#colonnasx .curriculumvitae li {
+    padding:5px 0;
+}
+
+#colonnasx .curriculumvitae li strong {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:13px;
+    padding:0;
+    display:inline;
+    height:auto;
+    border-bottom:0;
+    margin:0;
+    color:#000;
+}
+
+/*Colonna dx*/
+
+#colonnadx {
+    display:block;
+    width:336px;
+    height:auto!important;
+    min-height:500px;
+    height:500px;
+    position:absolute;
+    top:35px;
+    right:20px;
+    margin:0 0 10px 0;
+    padding-top:10px;
+}
+
+#colonnadx .faq-button {
+    height: 43px;
+}
+
+#colonnadx .faq-button a {
+    display:block;
+    width:auto;
+    height: 25px;
+    background:#FF8400;
+    margin-bottom: 3px;
+    color: white;
+    font-family: Verdana,Arial,sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#colonnadx .faq-button a:hover {
+    background:#FFCB7C;
+    color:#990000;
+}
+
+#colonnadx .faq-button img {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+#colonnadx #adv {
+    width:336px;
+    height:280px;
+    margin:0 0 5px 0;
+}
+
+/*item*/
+
+#colonnadx #item {
+    background:#FFEBCC;
+    height:auto!important;
+    height:100px;
+    margin:0 0 15px 0;
+    font-size:12px;
+}
+
+#colonnadx #item h3{
+    background:url(img/news.gif) bottom left no-repeat;
+    height:35px;
+    display:block;
+    font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+    font-size:15px;
+    color:#990000;
+    padding:10px 0 0 0;
+    text-align: center;
+}
+
+#colonnadx #item .testo {
+    padding:10px 20px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+#colonnadx #item .testo li {
+    list-style: square;
+    margin-left:20px;
+}
+
+#colonnadx #item img {
+    float: left;
+    margin-right: 10px;
+}
+
+#colonnadx #item #send-notify {
+    float: right;
+    padding-right: 20px;
+    width: 10%;
+}
+
+
+/*footer*/
+
+#footer {
+    padding:30px 0 0 30px;
+    font-size:10px;
+    color:#000;
+    background:url(img/sfondo_footer.jpg) top left no-repeat;
+    display:block;
+    height:35px;
+    width:940px;
+    position:relative;
+    margin:0 auto;
+    text-align:left;
+}
+
+#footer a {
+    color:#000;
+}
+
+#footer a.rss {
+    position:absolute;
+    top:20px;
+    right:17px;
+    color:#000;
+    display:block;
+    font-size:11px;
+    height: 29px;
+    width: 116px;
+    text-align:right;
+    padding:5px 0 0 0;
+}
+
+/*Iframe*/
+
+#CSX_DivIFrame {
+    padding:0;
+    margin:0 0 0 -5px;
+    height:auto!important;
+    height:200px;
+    min-height:200px;
+}
+
+/*aiuto*/
+
+#colonnasx .aiuto {
+    width:520px;
+    padding:5px 20px 5px 20px;
+    background:#ffffe1;
+    line-height:15px;
+}

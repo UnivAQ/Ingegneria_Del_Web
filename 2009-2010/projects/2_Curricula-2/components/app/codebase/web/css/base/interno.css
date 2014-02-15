@@ -1,0 +1,540 @@
+#colonnasx h2 {
+	display:block;
+	width:520px;
+	height:36px;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 0 0 50px;
+	position:relative;
+}
+
+#colonnasx h2.cerchilavoro {
+	background:url(img/cerchilavoro.gif) top left no-repeat;
+}
+
+#colonnasx a.faqcurriculum{
+	background:url(img/perche.gif) bottom left no-repeat;
+	font-size:12px;
+	font-weight:normal;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	display:block;
+	height:26px;
+	width:200px;
+	position:absolute;
+	color:#990000;
+	padding:10px 0 0 30px;;
+	top:0;
+	right:0;
+}
+
+
+
+#colonnasx h2.cerchiprof {
+	background:url(img/cerchiprof.gif) top left no-repeat;
+}
+
+/*h5 - colore pi� scuro di sfondo con sfumatura*/
+
+#colonnasx h5{
+	background:#FFEBCC url(img/sfondo_area_scuro.gif) top left repeat-x;
+	border-top:1px solid #FF6E00;
+	height:50px;
+	display:block;
+	width:550px;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	color:#000;
+	padding:10px;
+	position:relative;
+}
+
+#colonnasx h5 span{
+	height:40px;
+	display:block;
+	padding:10px 0 0 70px;
+	color:#000;
+}
+
+#colonnasx h5 span.oneshot{
+	background:url(img/oneshot.png!important) top left no-repeat;
+	background:url(img/oneshot.gif) top left no-repeat;
+}
+
+#colonnasx h5 span.ricerca{
+	background:url(img/ricerca.png!important) top left no-repeat;
+	background:url(img/ricerca.gif) top left no-repeat;
+}
+
+#colonnasx h5 span.rivedi{
+	background:url(img/rivedi.png!important) top left no-repeat;
+	background:url(img/rivedi.gif) top left no-repeat;
+}
+
+#colonnasx h5 span.crediti{
+	background:url(img/crediti.png!important) top left no-repeat;
+	background:url(img/crediti.gif) top left no-repeat;
+}
+
+/*appendice per pannello crediti*/
+
+#colonnasx h5 span.pannello {
+	display:block;
+	width:230px;
+	height:26px;
+	background: url(img/pannellocrediti.gif) top left no-repeat;
+	position:absolute;
+	bottom:18px;
+	right:0px;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	color:#990000;
+	padding:10px 0 0 10px;
+}
+
+#colonnasx h5 a.opzione {
+	display:block;
+	width:112px;
+	height:18px;
+	background: url(img/btn_ricarica.gif) top left no-repeat;
+	position:absolute;
+	bottom:23px;
+	right:11px;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+}
+
+#colonnasx h5 a:hover.opzione {
+	background: url(img/btn_ricarica.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+/*fine appendice*/
+
+#colonnasx h5 a.aggiungi {
+	display:block;
+	width:200px;
+	height:18px;
+	background: url(img/btn_aggiungi.gif) top left no-repeat;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+	position:absolute;
+	top:23px;
+	right:8px;
+}
+
+#colonnasx h5 a:hover.aggiungi  {
+	background: url(img/btn_aggiungi.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+/*h4 - colore pi� chiaro di sfondo*/
+
+#colonnasx h4{
+	background:#FFEBCC url(img/sfondo_area.gif) top left repeat-x;
+	border-top:1px solid #FF6E00;
+	height:50px;
+	display:block;
+	width:550px;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	color:#000;
+	padding:10px;
+}
+
+#colonnasx h4 span{
+	height:40px;
+	display:block;
+	position:relative;
+	padding:10px 0 0 70px;
+	color:#000;
+}
+
+#colonnasx h4 span.curriculum{
+	background:url(img/curriculum.png!important) top left no-repeat;
+	background:url(img/curriculum.gif) top left no-repeat;
+}
+
+#colonnasx h4 span.candidature{
+	background:url(img/candidature.png!important) top left no-repeat;
+	background:url(img/curriculum.gif) top left no-repeat;
+}
+
+
+/*menu area*/
+
+#menu_area {
+	background: url(img/sfondo_area_menu.gif) top left repeat-x;
+	display:block;
+	height:40px;
+}
+
+#menu_area li{
+	display:inline;
+}
+
+#menu_area a {
+	display:block;
+	width:85px;
+	height:18px;
+	background: url(img/btn_menu_area.gif) top left no-repeat;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+	float:left;
+	margin:0 4px;
+}
+
+#menu_area a:hover {
+	background: url(img/btn_menu_area.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+#menu_area a.active {
+	display:block;
+	width:85px;
+	height:18px;
+	background: url(img/btn_menu_area.gif) bottom left no-repeat;
+	color:#fff;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+	float:left;
+	margin:0 4px;
+}
+
+/*tabelle generiche*/
+
+#tabelle table{
+	padding:0 0 10px 0;
+	width:100%;
+}
+
+#tabelle table strong{
+	color:#FF0000;
+}
+
+#tabelle tr {
+	background:#FFEBCC;
+	font-size:10px;
+}
+
+.riepilogo_divisore {
+	background:#FFCB7C url(img/news.gif) bottom left no-repeat;
+	border-top:1px solid #FF6E00;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	color:#990000;
+	padding:10px 10px 20px 10px;
+	width:100%;
+}
+
+.riepilogo_descrizione{
+    width: 590px;
+    height: 50px;
+    background: none repeat scroll 0 0 #FFEBCC;
+}
+
+.riepilogo_skill{
+    float: left;
+    margin-right: 100px;
+}
+
+.exp_int{
+    width: 590px;
+}
+
+.riepilogo-intestazione{
+    margin-top: -7px;
+    float: left;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.riepilogo-exp{
+    float: left;
+    margin-right: 80px;
+}
+
+#tabelle tr.etichette {
+	background:#fff;
+	padding:0px;
+}
+
+#tabelle th {
+	font-size:11px;
+	font-weight:bold;
+	width:100px;
+	height:20px;
+	padding:10px 5px;
+}
+
+#tabelle td {
+	font-size:10px;
+	width:100px;
+	padding:10px 5px;
+}
+
+#tabelle td.opzioni {
+	border-bottom:1px solid #fff;
+	font-size:10px;
+	padding:5px;
+	width:100%;
+}
+
+#tabelle td.opzioni a, #tabelle a  {
+	display:block;
+	width:64px;
+	height:18px;
+	background: url(img/btn_tiny.gif) top left no-repeat;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+	float:left;
+	margin:0 10px 0 0;
+}
+
+#tabelle td.opzioni a:hover, #tabelle td a:hover{
+	background: url(img/btn_tiny.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+
+/*post*/
+
+#colonnasx .post table {
+	border-top:1px solid #FF6E00;
+	margin:0;
+}
+
+#colonnasx .post table {
+	width:570px;
+	display:block;
+}
+
+#colonnasx .post tr {
+	display:block;
+}
+
+#colonnasx .post td {
+	width:150px;
+	height:20px;
+	padding:5px 0 5px 20px;
+}
+
+#colonnasx .post td.cancella {
+	padding:0;
+	text-align:right;
+}
+
+#colonnasx .post th {
+	font-size:11px;
+	font-weight:bold;
+	color:#000;
+	width:150px;
+	height:20px;
+	padding:5px 0 5px 20px;
+}
+
+#colonnasx .post a {
+	display:block;
+	width:64px;
+	height:18px;
+	background: url(img/btn_tiny.gif) top left no-repeat;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+}
+
+#colonnasx .post a:hover  {
+	background: url(img/btn_tiny.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+#colonnasx .post .messaggio {
+	display:block;
+	background:#FFEBCC;
+	height:20px;
+	padding:5px 0 0 20px;
+}
+
+#colonnasx .post .invisibile {
+	display:block;
+	background:#FFCB7C;
+	padding:5px 20px;
+}
+
+/*oneshot*/
+
+#tabelle a.btn_tiny {
+	display:block;
+	width:64px;
+	height:18px;
+	background: url(img/btn_tiny.gif) top left no-repeat;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+}
+
+#tabelle a:hover.btn_tiny  {
+	background: url(img/btn_tiny.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+/*descrizione oneshot*/
+
+h6 {
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	display:block;
+	padding:5px 0;
+}
+
+#colonnasx .descrizione {
+	padding:0 0 10px 0;
+	line-height:20px;
+	display:block;
+	height:auto!important;
+	min-height:50px;
+	height:50px;
+
+}
+
+#colonnasx #inserisci_fotovideo {
+	display:block;
+	/*border-bottom:1px solid #ff6e00;*/
+	padding:10px 0;
+}
+
+
+
+#colonnasx .inserisci_foto {
+	float:left;
+	display:block;
+	width:250px;
+}
+
+#colonnasx .inserisci_foto img {
+	margin:5px 0;
+}
+
+#colonnasx .inserisci_foto h6 {	
+	margin:0 0 10px 0;
+}
+
+#colonnasx .inserisci_video h6 {	
+	margin:0 0 10px 0;
+}
+
+#colonnasx .inserisci_video h6 a {
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+#colonnasx .inserisci_video {
+	float:left;
+	display:block;
+	width:250px;
+	position:relative;
+	
+}
+
+#colonnasx .inserisci_video select {
+	width:250px;
+	margin:10px 0 0 0;
+}
+/*candidatura*/
+
+#colonnasx .candidati {
+	display:block;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:15px;
+	font-weight:bold;
+	color:#990000;
+	padding:12px 0 0 0;
+	height:30px;
+	position:relative;
+	margin:10px 0 0 0;
+	border-top:1px solid #FFEBCC;
+}
+
+#colonnasx .candidati a {
+	position:absolute;
+	top:9px;
+	right:10px;
+	display:block;
+	width:200px;
+	height:18px;
+	background: url(img/btn_aggiungi.gif) top left no-repeat;
+	color:#000;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:normal;
+	padding:7px 0 0 0;
+	text-align:center;
+}
+
+#colonnasx .candidati a:hover {
+	background: url(img/btn_aggiungi.gif) bottom left no-repeat;
+	color:#fff;
+}
+
+/*pbfooter*/
+
+#colonnasx .pbfooter {
+	border-top:1px solid #FF6E00;
+	font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+	font-size:12px;
+	padding:5px 0 0 0;
+	text-align:center;
+}
+
+#colonnasx .pbfooter span {
+	font-size:10px;
+	display:block;
+	padding:5px 0;
+}
+
+#colonnasx .pbfooter a {
+	text-decoration:underline;
+	color:#000;
+}
+
+#colonnasx .pbfooter a:hover  {
+	color:#990000;
+}
+
+/* */
+
+span #FontsCSX_txtCurriculum .dropdown {
+	padding:5px;
+	height:100px;
+}
+

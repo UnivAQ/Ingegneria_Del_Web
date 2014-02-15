@@ -1,0 +1,289 @@
+/*form*/
+
+#form {
+    padding:20px;
+    height:auto!important;
+    height:10px;
+    min-height:10px;
+}
+
+
+#form p {
+    display:block;
+    clear:both;
+    height:auto!important;
+    height:45px;
+    min-height:45px;
+    padding:15px 0 0 0;
+}
+
+#form label{
+    font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+    font-size:15px;
+    font-weight:bold;
+    display:block;
+    width:150px;
+    float:left;
+    height:25px;
+    padding:0 0 0 0;
+}
+
+#form input {
+    display:block;
+    width:280px;
+    height:20px;
+    padding:5px;
+    border:1px solid #FFA825;
+    float:left;
+}
+
+#form input[type='radio']{
+    display:inline;
+    float:none;
+    width: 2em;
+    vertical-align: middle;
+}
+
+#form select {
+    display:block;
+    width:290px;
+    height:30px;
+    padding:5px;
+    border:1px solid #FFA825;
+    float:left;
+}
+
+#form span {
+    padding:0;
+    font-weight:normal;
+    font-size:10px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    height:13px;
+    display:block;
+}
+
+#form .checkbox {
+    float:left;
+    padding:0;
+    width:auto;
+    height:20px;
+}
+
+#form .CheckBox {
+    float:left;
+    padding:0;
+    width:20px;
+    height:20px;
+}
+
+#form .checkbox td {
+    width:20px;
+}
+
+#form .checkbox input {
+    border:0;
+    padding:0;
+    width:auto;
+}
+
+#form .bottone {
+    width:120px;
+    border:0;
+    background:#FFCB7C;
+    color:#000000;
+    font-size:10px;
+    height:25px;
+}
+
+#form textarea {
+    width:280px;
+    height:150px;
+    border:1px solid #FFA825;
+    padding:5px;
+    float:left;
+    display:block;
+}
+
+#form #conoscenze {
+    display:block;
+    height:auto!important;
+    height:10px;
+    min-height:10px;
+}
+
+#form #conoscenze input {
+    padding:0;
+    width:auto;
+    height:20px;
+    border:0;
+    float:left;
+    margin:0 5px 0 0;
+}
+
+#form .subarea {
+    display:block;
+    width:290px;
+    height:150px;
+    padding:5px;
+    border:1px solid #FFA825;
+    float:left;
+}
+
+#form #conoscenze table tr td label {
+    float:left;
+    font-weight:normal;
+    padding:3px 0 0 0;
+    font-size:12px;
+    width:350px;
+}
+
+#form .tableradiolist{
+    /*border:1px solid black;*/
+    padding:0px 0px 0px 0px;
+    width:250px;
+    float:right;
+}
+#form .tableradiolist td{
+    /*border:1px solid black;*/
+    padding:0px 0px 0px 0px;
+    width:50px;
+    height:15px;
+}
+
+#form .tableradiolist input{
+    width:12px;
+    height:12px;
+    border: 0px;
+}
+
+/*aggiunte al form, modificabili*/
+
+#form a {
+    display:block;
+    width:140px;
+    height:18px;
+    background: url(img/btn_add.gif) top left no-repeat;
+    color:#000;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+    font-weight:normal;
+    padding:7px 0 0 0;
+    text-align:center;
+}
+
+#form a a:hover {
+    background: url(img/btn_add.gif) bottom left no-repeat;
+    color:#fff;
+}
+
+/*mod*/
+#form .videodescr a {
+    clear: both;
+}
+
+#form .videodescr {
+    border-top:1px solid #FF6E00;
+    margin:10px 0 0 0;
+}
+
+#form .descrizione a {
+    padding:2px 0 5px 0;
+}
+
+#form .descrizione {
+    border-top:1px solid #FF6E00;
+    margin:10px 0 0 0;
+}
+
+#search-form-simple {
+    padding:5px 20px 5px 20px;
+    height:360px;
+}
+
+#signin-form {
+    padding:5px 20px 5px 20px;
+    height:auto;
+    margin-bottom: 10px;
+}
+
+#signin-form a {
+    text-decoration: underline;
+    color: #FF6E00;
+}
+
+
+.form p {
+    display:block;
+    clear:both;
+    height:auto!important;
+    height:20px;
+    padding:15px 0 0 0;
+}
+
+.form label{
+    font-family:"Lucida Sans","Lucida Sans Unicode","Lucida", Verdana, Arial;
+    font-size:13px;
+    font-weight:bold;
+    display:block;
+    width:100px;
+    float:left;
+    height:25px;
+    padding:0 0 0 0;
+}
+
+.form input[type='text'], input[type='password'] {
+    display:block;
+    width:180px;
+    height:15px;
+    padding:5px;
+    border:1px solid #FFA825;
+    float:right;
+}
+
+#signin-action {
+    padding: 3px 10px 3px 10px;
+    float: right;
+}
+
+#search-form-simple input {
+    float:left;
+}
+
+#search-form-simple select {
+    display:block;
+    padding:5px;
+    text-align: center;
+    border:1px solid #FFA825;
+    float:left;
+    font-size: 10px;
+}
+
+#search-form-simple a {
+    display:block;
+    width:140px;
+    height:18px;
+    background: url(img/btn_add.gif) top left no-repeat;
+    color:#000;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:10px;
+    font-weight:normal;
+    margin-top:10px;
+    padding:7px 0 0 0;
+    text-align:center;
+    float:right;
+}
+
+/* Ricerca curriculum aziende */
+
+#search-c-area .date{
+    width: 4em;
+    margin-right: 3px;
+    text-align: center;
+}
+
+#search-c-area input[type='radio'] {
+    display:inline;
+    float:none;
+    width: 2em;
+    vertical-align: middle;
+}
